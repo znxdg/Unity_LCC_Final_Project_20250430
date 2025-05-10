@@ -1,28 +1,19 @@
 fileFormatVersion: 2
-guid: 9c202db8f832d404683e1ffd36749bae
+guid: 2eb406a38a3885041985282721683ccd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1349718751397675806
-    second: Size_05_0
+      213: 6090279379523034696
+    second: Plant01_0
   - first:
-      213: 3162693681921726263
-    second: Size_05_1
+      213: 5462632300136723378
+    second: Plant01_1
   - first:
-      213: -9177382543613911066
-    second: Size_05_2
+      213: 8045512285977716717
+    second: Plant01_2
   - first:
-      213: 5338711548977870589
-    second: Size_05_3
-  - first:
-      213: -1140514109475582866
-    second: Size_05_4
-  - first:
-      213: 4602902602686403710
-    second: Size_05_5
-  - first:
-      213: 9119333629722733290
-    second: Size_05_6
+      213: -8893492665405103501
+    second: Plant01_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -92,7 +83,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -118,155 +109,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Size_05_0
+      name: Plant01_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 160
-        width: 92
-        height: 157
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2ecf14c52f5d44de0800000000000000
-      internalID: -1349718751397675806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Size_05_1
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 160
-        width: 92
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7371154a52524eb20800000000000000
-      internalID: 3162693681921726263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Size_05_2
-      rect:
-        serializedVersion: 2
-        x: 197
-        y: 160
-        width: 87
-        height: 152
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6ef9500533363a080800000000000000
-      internalID: -9177382543613911066
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Size_05_3
-      rect:
-        serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 92
-        height: 157
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: df6f91b3ed9e61a40800000000000000
-      internalID: 5338711548977870589
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Size_05_4
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 0
-        width: 92
-        height: 157
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e6c036bc5741c20f0800000000000000
-      internalID: -1140514109475582866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Size_05_5
-      rect:
-        serializedVersion: 2
-        x: 229
-        y: 32
-        width: 19
+        width: 17
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e7418d8a78bc0ef30800000000000000
-      internalID: 4602902602686403710
+      spriteID: 84e5b57f3d4058450800000000000000
+      internalID: 6090279379523034696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Size_05_6
+      name: Plant01_1
       rect:
         serializedVersion: 2
-        x: 229
+        x: 16
         y: 0
-        width: 19
+        width: 17
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aeaa5e3be916e8e70800000000000000
-      internalID: 9119333629722733290
+      spriteID: 2b3793c722b2fcb40800000000000000
+      internalID: 5462632300136723378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant01_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de72eb11cc667af60800000000000000
+      internalID: 8045512285977716717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plant01_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372acf16a87f39480800000000000000
+      internalID: -8893492665405103501
       vertices: []
       indices: 
       edges: []
@@ -275,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8a10a813e039472479ad431c6630d3b0
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -284,14 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Size_05_0: -1349718751397675806
-      Size_05_1: 3162693681921726263
-      Size_05_2: -9177382543613911066
-      Size_05_3: 5338711548977870589
-      Size_05_4: -1140514109475582866
-      Size_05_5: 4602902602686403710
-      Size_05_6: 9119333629722733290
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

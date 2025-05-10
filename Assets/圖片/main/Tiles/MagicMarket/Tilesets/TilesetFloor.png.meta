@@ -1,28 +1,16 @@
 fileFormatVersion: 2
-guid: 9c202db8f832d404683e1ffd36749bae
+guid: bf438c78ba0993349af3b71eecc0bc18
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1349718751397675806
-    second: Size_05_0
+      213: 1842926534897299343
+    second: TilesetFloor_0
   - first:
-      213: 3162693681921726263
-    second: Size_05_1
+      213: 4836581756969154977
+    second: TilesetFloor_1
   - first:
-      213: -9177382543613911066
-    second: Size_05_2
-  - first:
-      213: 5338711548977870589
-    second: Size_05_3
-  - first:
-      213: -1140514109475582866
-    second: Size_05_4
-  - first:
-      213: 4602902602686403710
-    second: Size_05_5
-  - first:
-      213: 9119333629722733290
-    second: Size_05_6
+      213: -8571322000357261580
+    second: TilesetFloor_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,155 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Size_05_0
+      name: TilesetFloor_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 160
-        width: 92
-        height: 157
+        x: 0
+        y: 63
+        width: 176
+        height: 177
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ecf14c52f5d44de0800000000000000
-      internalID: -1349718751397675806
+      spriteID: f8fe1b35be3639910800000000000000
+      internalID: 1842926534897299343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Size_05_1
+      name: TilesetFloor_1
       rect:
         serializedVersion: 2
-        x: 97
-        y: 160
-        width: 92
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7371154a52524eb20800000000000000
-      internalID: 3162693681921726263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Size_05_2
-      rect:
-        serializedVersion: 2
-        x: 197
-        y: 160
-        width: 87
-        height: 152
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6ef9500533363a080800000000000000
-      internalID: -9177382543613911066
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Size_05_3
-      rect:
-        serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 92
-        height: 157
+        width: 33
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df6f91b3ed9e61a40800000000000000
-      internalID: 5338711548977870589
+      spriteID: 1a9f74f8b7dfe1340800000000000000
+      internalID: 4836581756969154977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Size_05_4
+      name: TilesetFloor_2
       rect:
         serializedVersion: 2
-        x: 97
-        y: 0
-        width: 92
-        height: 157
+        x: 47
+        y: 31
+        width: 82
+        height: 18
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6c036bc5741c20f0800000000000000
-      internalID: -1140514109475582866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Size_05_5
-      rect:
-        serializedVersion: 2
-        x: 229
-        y: 32
-        width: 19
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e7418d8a78bc0ef30800000000000000
-      internalID: 4602902602686403710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Size_05_6
-      rect:
-        serializedVersion: 2
-        x: 229
-        y: 0
-        width: 19
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aeaa5e3be916e8e70800000000000000
-      internalID: 9119333629722733290
+      spriteID: 4fef631bd0c8c0980800000000000000
+      internalID: -8571322000357261580
       vertices: []
       indices: 
       edges: []
@@ -275,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8a10a813e039472479ad431c6630d3b0
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -285,13 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Size_05_0: -1349718751397675806
-      Size_05_1: 3162693681921726263
-      Size_05_2: -9177382543613911066
-      Size_05_3: 5338711548977870589
-      Size_05_4: -1140514109475582866
-      Size_05_5: 4602902602686403710
-      Size_05_6: 9119333629722733290
+      TilesetFloor_0: 1842926534897299343
+      TilesetFloor_1: 4836581756969154977
+      TilesetFloor_2: -8571322000357261580
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
