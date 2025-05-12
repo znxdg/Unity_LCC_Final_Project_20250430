@@ -1,0 +1,4130 @@
+fileFormatVersion: 2
+guid: 1aa56ee34d72bd64b938943f1336fbb9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -61305408442454811
+    second: FREE Potions Assets Pack - 32x32 - 03_0
+  - first:
+      213: 131912312885413628
+    second: FREE Potions Assets Pack - 32x32 - 03_1
+  - first:
+      213: 4212694794467779661
+    second: FREE Potions Assets Pack - 32x32 - 03_2
+  - first:
+      213: 4090625403931603560
+    second: FREE Potions Assets Pack - 32x32 - 03_3
+  - first:
+      213: -3027384712489390516
+    second: FREE Potions Assets Pack - 32x32 - 03_4
+  - first:
+      213: 4252501055692082900
+    second: FREE Potions Assets Pack - 32x32 - 03_5
+  - first:
+      213: -6925259206209749637
+    second: FREE Potions Assets Pack - 32x32 - 03_6
+  - first:
+      213: 7437689477192355441
+    second: FREE Potions Assets Pack - 32x32 - 03_7
+  - first:
+      213: 2162692339254069714
+    second: FREE Potions Assets Pack - 32x32 - 03_8
+  - first:
+      213: 631310111240781118
+    second: FREE Potions Assets Pack - 32x32 - 03_9
+  - first:
+      213: 4732489110132788872
+    second: FREE Potions Assets Pack - 32x32 - 03_10
+  - first:
+      213: 5145247739424682666
+    second: FREE Potions Assets Pack - 32x32 - 03_11
+  - first:
+      213: -405209297795227712
+    second: FREE Potions Assets Pack - 32x32 - 03_12
+  - first:
+      213: -7279195991153445187
+    second: FREE Potions Assets Pack - 32x32 - 03_13
+  - first:
+      213: -4151990754077618953
+    second: FREE Potions Assets Pack - 32x32 - 03_14
+  - first:
+      213: -9137960783399603362
+    second: FREE Potions Assets Pack - 32x32 - 03_15
+  - first:
+      213: -7168298771836524289
+    second: FREE Potions Assets Pack - 32x32 - 03_16
+  - first:
+      213: 4259555682351102405
+    second: FREE Potions Assets Pack - 32x32 - 03_17
+  - first:
+      213: 332669641839798156
+    second: FREE Potions Assets Pack - 32x32 - 03_18
+  - first:
+      213: 2180125048500997113
+    second: FREE Potions Assets Pack - 32x32 - 03_19
+  - first:
+      213: -5935736124740198470
+    second: FREE Potions Assets Pack - 32x32 - 03_20
+  - first:
+      213: 1826186250238878772
+    second: FREE Potions Assets Pack - 32x32 - 03_21
+  - first:
+      213: -83464185069059381
+    second: FREE Potions Assets Pack - 32x32 - 03_22
+  - first:
+      213: -4470014430059718036
+    second: FREE Potions Assets Pack - 32x32 - 03_23
+  - first:
+      213: -6475601078068588733
+    second: FREE Potions Assets Pack - 32x32 - 03_24
+  - first:
+      213: -1100072184653938952
+    second: FREE Potions Assets Pack - 32x32 - 03_25
+  - first:
+      213: 4473635442608006270
+    second: FREE Potions Assets Pack - 32x32 - 03_26
+  - first:
+      213: 7115757874323544498
+    second: FREE Potions Assets Pack - 32x32 - 03_27
+  - first:
+      213: -3462163532504054278
+    second: FREE Potions Assets Pack - 32x32 - 03_28
+  - first:
+      213: 8236375181480263788
+    second: FREE Potions Assets Pack - 32x32 - 03_29
+  - first:
+      213: 4399415086720556593
+    second: FREE Potions Assets Pack - 32x32 - 03_30
+  - first:
+      213: 3131364885420885718
+    second: FREE Potions Assets Pack - 32x32 - 03_31
+  - first:
+      213: 451755242051297720
+    second: FREE Potions Assets Pack - 32x32 - 03_32
+  - first:
+      213: 4185433176931047746
+    second: FREE Potions Assets Pack - 32x32 - 03_33
+  - first:
+      213: 5046150983950860340
+    second: FREE Potions Assets Pack - 32x32 - 03_34
+  - first:
+      213: -2416748674668818504
+    second: FREE Potions Assets Pack - 32x32 - 03_35
+  - first:
+      213: -272661239778832578
+    second: FREE Potions Assets Pack - 32x32 - 03_36
+  - first:
+      213: 1111754857925576087
+    second: FREE Potions Assets Pack - 32x32 - 03_37
+  - first:
+      213: 3236478296953971443
+    second: FREE Potions Assets Pack - 32x32 - 03_38
+  - first:
+      213: 5502636258509038420
+    second: FREE Potions Assets Pack - 32x32 - 03_39
+  - first:
+      213: -807251176181963496
+    second: FREE Potions Assets Pack - 32x32 - 03_40
+  - first:
+      213: -1253369564822724888
+    second: FREE Potions Assets Pack - 32x32 - 03_41
+  - first:
+      213: -11410775811304068
+    second: FREE Potions Assets Pack - 32x32 - 03_42
+  - first:
+      213: 3211070967990065325
+    second: FREE Potions Assets Pack - 32x32 - 03_43
+  - first:
+      213: -8454439166511703748
+    second: FREE Potions Assets Pack - 32x32 - 03_44
+  - first:
+      213: -202163404165805070
+    second: FREE Potions Assets Pack - 32x32 - 03_45
+  - first:
+      213: 4566046411396970099
+    second: FREE Potions Assets Pack - 32x32 - 03_46
+  - first:
+      213: 5271060434333041019
+    second: FREE Potions Assets Pack - 32x32 - 03_47
+  - first:
+      213: -4025964248176103421
+    second: FREE Potions Assets Pack - 32x32 - 03_48
+  - first:
+      213: -593823219575074926
+    second: FREE Potions Assets Pack - 32x32 - 03_49
+  - first:
+      213: -287426845850515433
+    second: FREE Potions Assets Pack - 32x32 - 03_50
+  - first:
+      213: -8072008423094924995
+    second: FREE Potions Assets Pack - 32x32 - 03_51
+  - first:
+      213: -4240768565857438673
+    second: FREE Potions Assets Pack - 32x32 - 03_52
+  - first:
+      213: 1646162999621971335
+    second: FREE Potions Assets Pack - 32x32 - 03_53
+  - first:
+      213: -2727783405531037445
+    second: FREE Potions Assets Pack - 32x32 - 03_54
+  - first:
+      213: -8331279811268095415
+    second: FREE Potions Assets Pack - 32x32 - 03_55
+  - first:
+      213: 8174151746082694712
+    second: FREE Potions Assets Pack - 32x32 - 03_56
+  - first:
+      213: 8056397268833004207
+    second: FREE Potions Assets Pack - 32x32 - 03_57
+  - first:
+      213: 8793155134490285759
+    second: FREE Potions Assets Pack - 32x32 - 03_58
+  - first:
+      213: -6452055569861846291
+    second: FREE Potions Assets Pack - 32x32 - 03_59
+  - first:
+      213: 6364644370525125444
+    second: FREE Potions Assets Pack - 32x32 - 03_60
+  - first:
+      213: -3146035662405103950
+    second: FREE Potions Assets Pack - 32x32 - 03_61
+  - first:
+      213: -1762181960772549160
+    second: FREE Potions Assets Pack - 32x32 - 03_62
+  - first:
+      213: 1452241758036289783
+    second: FREE Potions Assets Pack - 32x32 - 03_63
+  - first:
+      213: 2519808112164464881
+    second: FREE Potions Assets Pack - 32x32 - 03_64
+  - first:
+      213: -822276125070405114
+    second: FREE Potions Assets Pack - 32x32 - 03_65
+  - first:
+      213: -2367970484254747708
+    second: FREE Potions Assets Pack - 32x32 - 03_66
+  - first:
+      213: 1700091556297159965
+    second: FREE Potions Assets Pack - 32x32 - 03_67
+  - first:
+      213: 8137471328843079376
+    second: FREE Potions Assets Pack - 32x32 - 03_68
+  - first:
+      213: -1580085987039179974
+    second: FREE Potions Assets Pack - 32x32 - 03_69
+  - first:
+      213: 6376936116832223900
+    second: FREE Potions Assets Pack - 32x32 - 03_70
+  - first:
+      213: -7569925314814260082
+    second: FREE Potions Assets Pack - 32x32 - 03_71
+  - first:
+      213: 6836030415156480294
+    second: FREE Potions Assets Pack - 32x32 - 03_72
+  - first:
+      213: -3081734727762357688
+    second: FREE Potions Assets Pack - 32x32 - 03_73
+  - first:
+      213: -6226846735061718234
+    second: FREE Potions Assets Pack - 32x32 - 03_74
+  - first:
+      213: 2148056857992116113
+    second: FREE Potions Assets Pack - 32x32 - 03_75
+  - first:
+      213: 3826693866125448769
+    second: FREE Potions Assets Pack - 32x32 - 03_76
+  - first:
+      213: -3080295469962936394
+    second: FREE Potions Assets Pack - 32x32 - 03_77
+  - first:
+      213: 9206106511061393398
+    second: FREE Potions Assets Pack - 32x32 - 03_78
+  - first:
+      213: -7259087437406162142
+    second: FREE Potions Assets Pack - 32x32 - 03_79
+  - first:
+      213: -3428061574792410062
+    second: FREE Potions Assets Pack - 32x32 - 03_80
+  - first:
+      213: 2839938534546298140
+    second: FREE Potions Assets Pack - 32x32 - 03_81
+  - first:
+      213: -1144949461719103829
+    second: FREE Potions Assets Pack - 32x32 - 03_82
+  - first:
+      213: -961468587456704954
+    second: FREE Potions Assets Pack - 32x32 - 03_83
+  - first:
+      213: -695417282936737861
+    second: FREE Potions Assets Pack - 32x32 - 03_84
+  - first:
+      213: -9142255151586823882
+    second: FREE Potions Assets Pack - 32x32 - 03_85
+  - first:
+      213: 3829352799450941965
+    second: FREE Potions Assets Pack - 32x32 - 03_86
+  - first:
+      213: 6877893586171903106
+    second: FREE Potions Assets Pack - 32x32 - 03_87
+  - first:
+      213: -581248339340854879
+    second: FREE Potions Assets Pack - 32x32 - 03_88
+  - first:
+      213: 6732761905805564931
+    second: FREE Potions Assets Pack - 32x32 - 03_89
+  - first:
+      213: -2512433289871963542
+    second: FREE Potions Assets Pack - 32x32 - 03_90
+  - first:
+      213: -22939602118554240
+    second: FREE Potions Assets Pack - 32x32 - 03_91
+  - first:
+      213: 7154411724549772032
+    second: FREE Potions Assets Pack - 32x32 - 03_92
+  - first:
+      213: 3704525460649600343
+    second: FREE Potions Assets Pack - 32x32 - 03_93
+  - first:
+      213: -5746174614782871562
+    second: FREE Potions Assets Pack - 32x32 - 03_94
+  - first:
+      213: -438143399093591367
+    second: FREE Potions Assets Pack - 32x32 - 03_95
+  - first:
+      213: 4960942896820519049
+    second: FREE Potions Assets Pack - 32x32 - 03_96
+  - first:
+      213: 3575861143493022138
+    second: FREE Potions Assets Pack - 32x32 - 03_97
+  - first:
+      213: 7334795602454006865
+    second: FREE Potions Assets Pack - 32x32 - 03_98
+  - first:
+      213: -8682944669887783463
+    second: FREE Potions Assets Pack - 32x32 - 03_99
+  - first:
+      213: 965821256649137207
+    second: FREE Potions Assets Pack - 32x32 - 03_100
+  - first:
+      213: 8087227773245623585
+    second: FREE Potions Assets Pack - 32x32 - 03_101
+  - first:
+      213: 4309084039636172506
+    second: FREE Potions Assets Pack - 32x32 - 03_102
+  - first:
+      213: -6221107715176576139
+    second: FREE Potions Assets Pack - 32x32 - 03_103
+  - first:
+      213: 2045768905039461352
+    second: FREE Potions Assets Pack - 32x32 - 03_104
+  - first:
+      213: -3601723664729553721
+    second: FREE Potions Assets Pack - 32x32 - 03_105
+  - first:
+      213: -7812126711534207544
+    second: FREE Potions Assets Pack - 32x32 - 03_106
+  - first:
+      213: -2819424105238676645
+    second: FREE Potions Assets Pack - 32x32 - 03_107
+  - first:
+      213: 3298485697874851662
+    second: FREE Potions Assets Pack - 32x32 - 03_108
+  - first:
+      213: -8231278983577487578
+    second: FREE Potions Assets Pack - 32x32 - 03_109
+  - first:
+      213: 1633246271464326470
+    second: FREE Potions Assets Pack - 32x32 - 03_110
+  - first:
+      213: 3842174424164135718
+    second: FREE Potions Assets Pack - 32x32 - 03_111
+  - first:
+      213: 1422088757538785215
+    second: FREE Potions Assets Pack - 32x32 - 03_112
+  - first:
+      213: 945532535810834386
+    second: FREE Potions Assets Pack - 32x32 - 03_113
+  - first:
+      213: 7659377109977474035
+    second: FREE Potions Assets Pack - 32x32 - 03_114
+  - first:
+      213: -4415910409599615740
+    second: FREE Potions Assets Pack - 32x32 - 03_115
+  - first:
+      213: 8799147824802743135
+    second: FREE Potions Assets Pack - 32x32 - 03_116
+  - first:
+      213: -4478149431368443567
+    second: FREE Potions Assets Pack - 32x32 - 03_117
+  - first:
+      213: 8472663973480499815
+    second: FREE Potions Assets Pack - 32x32 - 03_118
+  - first:
+      213: -7339388555914353793
+    second: FREE Potions Assets Pack - 32x32 - 03_119
+  - first:
+      213: 4775656195528126696
+    second: FREE Potions Assets Pack - 32x32 - 03_120
+  - first:
+      213: 4076029803327332346
+    second: FREE Potions Assets Pack - 32x32 - 03_121
+  - first:
+      213: 6672667599492001536
+    second: FREE Potions Assets Pack - 32x32 - 03_122
+  - first:
+      213: -4779370412731898535
+    second: FREE Potions Assets Pack - 32x32 - 03_123
+  - first:
+      213: 3688063912556841590
+    second: FREE Potions Assets Pack - 32x32 - 03_124
+  - first:
+      213: -6908242497903247329
+    second: FREE Potions Assets Pack - 32x32 - 03_125
+  - first:
+      213: -5833710590553498565
+    second: FREE Potions Assets Pack - 32x32 - 03_126
+  - first:
+      213: -7410976426837330769
+    second: FREE Potions Assets Pack - 32x32 - 03_127
+  - first:
+      213: 8291773066945392428
+    second: FREE Potions Assets Pack - 32x32 - 03_128
+  - first:
+      213: 4139301178642002297
+    second: FREE Potions Assets Pack - 32x32 - 03_129
+  - first:
+      213: -3774037351701216917
+    second: FREE Potions Assets Pack - 32x32 - 03_130
+  - first:
+      213: 3855625974524320671
+    second: FREE Potions Assets Pack - 32x32 - 03_131
+  - first:
+      213: -2230668754813241677
+    second: FREE Potions Assets Pack - 32x32 - 03_132
+  - first:
+      213: 3715056495936604113
+    second: FREE Potions Assets Pack - 32x32 - 03_133
+  - first:
+      213: 5460192760746822991
+    second: FREE Potions Assets Pack - 32x32 - 03_134
+  - first:
+      213: 8122679669906744120
+    second: FREE Potions Assets Pack - 32x32 - 03_135
+  - first:
+      213: -1124806510295672711
+    second: FREE Potions Assets Pack - 32x32 - 03_136
+  - first:
+      213: -537191520893917032
+    second: FREE Potions Assets Pack - 32x32 - 03_137
+  - first:
+      213: -4300448539045116124
+    second: FREE Potions Assets Pack - 32x32 - 03_138
+  - first:
+      213: 2886868258792764585
+    second: FREE Potions Assets Pack - 32x32 - 03_139
+  - first:
+      213: -5153540477159268214
+    second: FREE Potions Assets Pack - 32x32 - 03_140
+  - first:
+      213: -6859779921425649523
+    second: FREE Potions Assets Pack - 32x32 - 03_141
+  - first:
+      213: -2252557087689717004
+    second: FREE Potions Assets Pack - 32x32 - 03_142
+  - first:
+      213: 3632839345773493816
+    second: FREE Potions Assets Pack - 32x32 - 03_143
+  - first:
+      213: -1420974189592808965
+    second: FREE Potions Assets Pack - 32x32 - 03_144
+  - first:
+      213: 2718935459944770019
+    second: FREE Potions Assets Pack - 32x32 - 03_145
+  - first:
+      213: -1312612449639148932
+    second: FREE Potions Assets Pack - 32x32 - 03_146
+  - first:
+      213: 7582008813604350022
+    second: FREE Potions Assets Pack - 32x32 - 03_147
+  - first:
+      213: 55121812907447317
+    second: FREE Potions Assets Pack - 32x32 - 03_148
+  - first:
+      213: 5917496476749512190
+    second: FREE Potions Assets Pack - 32x32 - 03_149
+  - first:
+      213: 5568671653256004105
+    second: FREE Potions Assets Pack - 32x32 - 03_150
+  - first:
+      213: -52917892962573274
+    second: FREE Potions Assets Pack - 32x32 - 03_151
+  - first:
+      213: 5029732686869112776
+    second: FREE Potions Assets Pack - 32x32 - 03_152
+  - first:
+      213: -5349038266965767340
+    second: FREE Potions Assets Pack - 32x32 - 03_153
+  - first:
+      213: 1249752427948132105
+    second: FREE Potions Assets Pack - 32x32 - 03_154
+  - first:
+      213: 8811430679009435172
+    second: FREE Potions Assets Pack - 32x32 - 03_155
+  - first:
+      213: 5019972396975802942
+    second: FREE Potions Assets Pack - 32x32 - 03_156
+  - first:
+      213: 3031984151403938623
+    second: FREE Potions Assets Pack - 32x32 - 03_157
+  - first:
+      213: -3708350001883421270
+    second: FREE Potions Assets Pack - 32x32 - 03_158
+  - first:
+      213: 293636582636031759
+    second: FREE Potions Assets Pack - 32x32 - 03_159
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ec2afa4e03362ff0800000000000000
+      internalID: -61305408442454811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf60907bc85a4d100800000000000000
+      internalID: 131912312885413628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d44a363889f767a30800000000000000
+      internalID: 4212694794467779661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_3
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 862388eb122d4c830800000000000000
+      internalID: 4090625403931603560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_4
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e2f9dc4a19cf5d0800000000000000
+      internalID: -3027384712489390516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_5
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4de008fed2be30b30800000000000000
+      internalID: 4252501055692082900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_6
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d3d5c817984ef90800000000000000
+      internalID: -6925259206209749637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_7
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17e06b54c2bf73760800000000000000
+      internalID: 7437689477192355441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_8
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d982bf593d630e10800000000000000
+      internalID: 2162692339254069714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_9
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d7e9b833dd2c800800000000000000
+      internalID: 631310111240781118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_10
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e8ed895cd2da140800000000000000
+      internalID: 4732489110132788872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_11
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa23acdee87976740800000000000000
+      internalID: 5145247739424682666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_12
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cfda316a48606af0800000000000000
+      internalID: -405209297795227712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_13
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db6f9d810d91bfa90800000000000000
+      internalID: -7279195991153445187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_14
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc4f78486a2166c0800000000000000
+      internalID: -4151990754077618953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_15
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e53340e15117f2180800000000000000
+      internalID: -9137960783399603362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_16
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff8a0dc0f36158c90800000000000000
+      internalID: -7168298771836524289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_17
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c9b883335bfc1b30800000000000000
+      internalID: 4259555682351102405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_18
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c87ea65d641ed9400800000000000000
+      internalID: 332669641839798156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_19
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb45d94e2c514e10800000000000000
+      internalID: 2180125048500997113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_20
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf1864817700ada0800000000000000
+      internalID: -5935736124740198470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_21
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 434e03318bae75910800000000000000
+      internalID: 1826186250238878772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_22
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc2cd7114c977def0800000000000000
+      internalID: -83464185069059381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_23
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a9b6b1f8157f1c0800000000000000
+      internalID: -4470014430059718036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_24
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34fc592f02b0226a0800000000000000
+      internalID: -6475601078068588733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_25
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fef96e2d22cbb0f0800000000000000
+      internalID: -1100072184653938952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_26
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e746f339bbb851e30800000000000000
+      internalID: 4473635442608006270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_27
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b95eb6f51040c260800000000000000
+      internalID: 7115757874323544498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_28
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af5c8ca4c9ce3ffc0800000000000000
+      internalID: -3462163532504054278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_29
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6089f0e69b7d4270800000000000000
+      internalID: 8236375181480263788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_30
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13e197756bcdd0d30800000000000000
+      internalID: 4399415086720556593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_31
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6c4a9c5c7d47b20800000000000000
+      internalID: 3131364885420885718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_32
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b163e7cff4f44600800000000000000
+      internalID: 451755242051297720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_33
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2491c1e8c45a51a30800000000000000
+      internalID: 4185433176931047746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_34
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43001619597870640800000000000000
+      internalID: 5046150983950860340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_35
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf08f682ebf57ed0800000000000000
+      internalID: -2416748674668818504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_36
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3f07fa0c00573cf0800000000000000
+      internalID: -272661239778832578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_37
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79508f7272fbd6f00800000000000000
+      internalID: 1111754857925576087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_38
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 575
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f2e33d0dd74aec20800000000000000
+      internalID: 3236478296953971443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_39
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 607
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453ad9cd58a4d5c40800000000000000
+      internalID: 5502636258509038420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_40
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 815682f05511cc4f0800000000000000
+      internalID: -807251176181963496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_41
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ee947c75032b9ee0800000000000000
+      internalID: -1253369564822724888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_42
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75d729b5f577dff0800000000000000
+      internalID: -11410775811304068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_43
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da81e9b4804009c20800000000000000
+      internalID: 3211070967990065325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_44
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c399be02f5ccbaa80800000000000000
+      internalID: -8454439166511703748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_45
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fb0d1c7475c13df0800000000000000
+      internalID: -202163404165805070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_46
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376734be40bdd5f30800000000000000
+      internalID: 4566046411396970099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_47
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b71890aa981962940800000000000000
+      internalID: 5271060434333041019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_48
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3007a05c8d6e028c0800000000000000
+      internalID: -4025964248176103421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_49
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29f49d19de052c7f0800000000000000
+      internalID: -593823219575074926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_50
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7184b2a7ecad20cf0800000000000000
+      internalID: -287426845850515433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_51
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3947754b177aff80800000000000000
+      internalID: -8072008423094924995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_52
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f24bc693573c525c0800000000000000
+      internalID: -4240768565857438673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_53
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78debd2c68858d610800000000000000
+      internalID: 1646162999621971335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_54
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf00e11f177f42ad0800000000000000
+      internalID: -2727783405531037445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_55
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9425bf41729516c80800000000000000
+      internalID: -8331279811268095415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_56
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 836e56d54bb607170800000000000000
+      internalID: 8174151746082694712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_57
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faae732a1a21ecf60800000000000000
+      internalID: 8056397268833004207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_58
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb61236b100970a70800000000000000
+      internalID: 8793155134490285759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_59
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deadd47c4a1b576a0800000000000000
+      internalID: -6452055569861846291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_60
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44bf6da6552c35850800000000000000
+      internalID: 6364644370525125444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_61
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2be02a3cb390754d0800000000000000
+      internalID: -3146035662405103950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_62
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d50d86d7d87b87e0800000000000000
+      internalID: -1762181960772549160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_63
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f8edb34f26672410800000000000000
+      internalID: 1452241758036289783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_64
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f8e5b3a02828f220800000000000000
+      internalID: 2519808112164464881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_65
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 602d4e98830b694f0800000000000000
+      internalID: -822276125070405114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_66
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c3d26ff367432fd0800000000000000
+      internalID: -2367970484254747708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_67
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d15bbb25340f79710800000000000000
+      internalID: 1700091556297159965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_68
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de1e953f0b1ee070800000000000000
+      internalID: 8137471328843079376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_69
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b05fb9a28621ae0800000000000000
+      internalID: -1580085987039179974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_70
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92c42f9c9d6f7850800000000000000
+      internalID: 6376936116832223900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_71
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c424a880932f690800000000000000
+      internalID: -7569925314814260082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_72
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6290b2991757ede50800000000000000
+      internalID: 6836030415156480294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_73
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8425db3c79a7b35d0800000000000000
+      internalID: -3081734727762357688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_74
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62b68ddb2ebc599a0800000000000000
+      internalID: -6226846735061718234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_75
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19736f9d45e6fcd10800000000000000
+      internalID: 2148056857992116113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_76
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146d29aebc52b1530800000000000000
+      internalID: 3826693866125448769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_77
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bf3d9517979045d0800000000000000
+      internalID: -3080295469962936394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_78
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 543
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff99348819a2cf70800000000000000
+      internalID: 9206106511061393398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_79
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 383
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 223b7eb9f6a824b90800000000000000
+      internalID: -7259087437406162142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_80
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c055e09241d60d0800000000000000
+      internalID: -3428061574792410062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_81
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c15539fec0d796720800000000000000
+      internalID: 2839938534546298140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_82
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba64570e7825c10f0800000000000000
+      internalID: -1144949461719103829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_83
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e42fde96d28a2f0800000000000000
+      internalID: -961468587456704954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_84
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf63e76aa16956f0800000000000000
+      internalID: -695417282936737861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_85
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 631beab906f202180800000000000000
+      internalID: -9142255151586823882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_86
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0acbe21518942530800000000000000
+      internalID: 3829352799450941965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_87
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28cb6b6a6cf237f50800000000000000
+      internalID: 6877893586171903106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_88
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a97d4707bdfee7f0800000000000000
+      internalID: -581248339340854879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_89
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30c92d818439f6d50800000000000000
+      internalID: 6732761905805564931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_90
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ac05bfb3b022dd0800000000000000
+      internalID: -2512433289871963542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_91
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08d4f6cad808eaff0800000000000000
+      internalID: -22939602118554240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_92
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003ddaace83994360800000000000000
+      internalID: 7154411724549772032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_93
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 755e86f674e196330800000000000000
+      internalID: 3704525460649600343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_94
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f7ff74e1ac7140b0800000000000000
+      internalID: -5746174614782871562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_95
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b2285066e66be9f0800000000000000
+      internalID: -438143399093591367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_96
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9800cfbc74fc8d440800000000000000
+      internalID: 4960942896820519049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_97
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab11608a3c200a130800000000000000
+      internalID: 3575861143493022138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_98
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15c4e503dbd6ac560800000000000000
+      internalID: 7334795602454006865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_99
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd97f2b3dbff7780800000000000000
+      internalID: -8682944669887783463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_100
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73cd717d059476d00800000000000000
+      internalID: 965821256649137207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_101
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12d8af1dfca9b3070800000000000000
+      internalID: 8087227773245623585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_102
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adeb1d18a11fccb30800000000000000
+      internalID: 4309084039636172506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_103
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b457f6e7f2aa9a0800000000000000
+      internalID: -6221107715176576139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_104
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ebba6deaf7046c10800000000000000
+      internalID: 2045768905039461352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_105
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c44da0e86b140ec0800000000000000
+      internalID: -3601723664729553721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_106
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cdb9a27520c59390800000000000000
+      internalID: -7812126711534207544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_107
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b3318d6b46fd8d0800000000000000
+      internalID: -2819424105238676645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_108
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e47798e144396cd20800000000000000
+      internalID: 3298485697874851662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_109
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 627b9b8206f94cd80800000000000000
+      internalID: -8231278983577487578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_110
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 645cc51a4d47aa610800000000000000
+      internalID: 1633246271464326470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_111
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 623f4653845225530800000000000000
+      internalID: 3842174424164135718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_112
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb70d20c0364cb310800000000000000
+      internalID: 1422088757538785215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_113
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df3498e4d43f1d00800000000000000
+      internalID: 945532535810834386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_114
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f327f086e29b4a60800000000000000
+      internalID: 7659377109977474035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_115
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d7dd301e887b2c0800000000000000
+      internalID: -4415910409599615740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_116
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f53c487a35adc1a70800000000000000
+      internalID: 8799147824802743135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_117
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1599a2481da6ad1c0800000000000000
+      internalID: -4478149431368443567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_118
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 255
+        width: 30
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76a0e886ef2f49570800000000000000
+      internalID: 8472663973480499815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_119
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 224
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7368208ef0452a90800000000000000
+      internalID: -7339388555914353793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0f8dfd10a864240800000000000000
+      internalID: 4775656195528126696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_121
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aff1b39a287f09830800000000000000
+      internalID: 4076029803327332346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_122
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00faaf314d31a9c50800000000000000
+      internalID: 6672667599492001536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_123
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9556a1b8ee34cadb0800000000000000
+      internalID: -4779370412731898535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_124
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a43e89692ae2330800000000000000
+      internalID: 3688063912556841590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_125
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f104832bc0ef020a0800000000000000
+      internalID: -6908242497903247329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_126
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3cdf9f402f7a0fa0800000000000000
+      internalID: -5833710590553498565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_127
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa4319f643ce62990800000000000000
+      internalID: -7410976426837330769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_128
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f6e653cab421370800000000000000
+      internalID: 8291773066945392428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_129
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 971ff43bd70c17930800000000000000
+      internalID: 4139301178642002297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_130
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b610bca360def9bc0800000000000000
+      internalID: -3774037351701216917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_131
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b9a46556fe18530800000000000000
+      internalID: 3855625974524320671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_132
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b63bc906921b01e0800000000000000
+      internalID: -2230668754813241677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_133
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d70fc823388e8330800000000000000
+      internalID: 3715056495936604113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_134
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d4975f26086cb40800000000000000
+      internalID: 5460192760746822991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_135
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 833241dbf1e89b070800000000000000
+      internalID: 8122679669906744120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_136
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97897c83072e360f0800000000000000
+      internalID: -1124806510295672711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_137
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89824cc68238b88f0800000000000000
+      internalID: -537191520893917032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_138
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4274e57a6dcb154c0800000000000000
+      internalID: -4300448539045116124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_139
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a471b6d267301820800000000000000
+      internalID: 2886868258792764585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_140
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a80235b9d32fa78b0800000000000000
+      internalID: -5153540477159268214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_141
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d803112918a2dc0a0800000000000000
+      internalID: -6859779921425649523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_142
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa47f7634f4db0e0800000000000000
+      internalID: -2252557087689717004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_143
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e34ea23207a6230800000000000000
+      internalID: 3632839345773493816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_144
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf17252d08fa74ce0800000000000000
+      internalID: -1420974189592808965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_145
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9a83135699bb520800000000000000
+      internalID: 2718935459944770019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_146
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72d08b7ee9a8cde0800000000000000
+      internalID: -1312612449639148932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_147
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648a4c248d4b83960800000000000000
+      internalID: 7582008813604350022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_148
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51459bd2ff4d3c000800000000000000
+      internalID: 55121812907447317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_149
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efdb74081bb2f1250800000000000000
+      internalID: 5917496476749512190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_150
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9028c135d55e74d40800000000000000
+      internalID: 5568671653256004105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_151
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62424bbe47ff34ff0800000000000000
+      internalID: -52917892962573274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_152
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c72104ea333dc540800000000000000
+      internalID: 5029732686869112776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_153
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45bc88f590664c5b0800000000000000
+      internalID: -5349038266965767340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_154
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907c7053633085110800000000000000
+      internalID: 1249752427948132105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_155
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e1651848d784a70800000000000000
+      internalID: 8811430679009435172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_156
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a42005c468aa540800000000000000
+      internalID: 5019972396975802942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_157
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33cb058585c31a20800000000000000
+      internalID: 3031984151403938623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_158
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 31
+        width: 32
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa56bea225b498cc0800000000000000
+      internalID: -3708350001883421270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FREE Potions Assets Pack - 32x32 - 03_159
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f84198ae4331400800000000000000
+      internalID: 293636582636031759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
