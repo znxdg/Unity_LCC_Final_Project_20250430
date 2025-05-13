@@ -5,6 +5,7 @@ namespace Rrondo
 {
     /// <summary>
     /// 我是加熱系統
+    /// 新增@@支援 UI 顯示完美加熱區間
     /// </summary>
     public class HeatManager : MonoBehaviour
     {
@@ -34,8 +35,9 @@ namespace Rrondo
         private bool isFinished = false;
 
         [Header("UI")]
-        public Slider temperatureSlider;
-        public Image fillBar;
+        public Slider temperatureSlider;         // 滑桿條
+        public Image fillBar;                   // 填滿區顏色
+        public Image perfectZoneImage;          // 顯示完美區間的 UI Image
 
         public System.Action<bool> OnHeatingResult;
 
@@ -61,6 +63,8 @@ namespace Rrondo
             overheatTimer = 0;
             underheatTimer = 0;
             isFinished = false;
+
+            UpdatePerfectZone(); // 初始化時更新完美區域顯示
         }
 
         void Update()
@@ -71,6 +75,7 @@ namespace Rrondo
             temperature -= decayPerSecond * Time.deltaTime;
             temperature = Mathf.Clamp(temperature, 0f, maxTemperature);
 
+            // 狀態判定邏輯
             if (temperature >= idealMin && temperature <= idealMax)
             {
                 stableTimer += Time.deltaTime;
@@ -123,13 +128,36 @@ namespace Rrondo
             if (fillBar)
                 fillBar.color = (temperature >= idealMin && temperature <= idealMax) ? Color.green :
                                 (temperature > idealMax) ? Color.red : Color.blue;
+
+            // 可以選擇只在初始化後更新一次 perfect zone，如果 idealMin/Max 不變的話
+        }
+
+        void UpdatePerfectZone()
+        {
+            if (perfectZoneImage == null || temperatureSlider == null) return;
+
+            RectTransform fillArea = temperatureSlider.fillRect.parent.GetComponent<RectTransform>();
+            RectTransform perfectRect = perfectZoneImage.GetComponent<RectTransform>();
+
+            float totalWidth = fillArea.rect.width;
+            float range = maxTemperature;
+
+            float startPercent = idealMin / range;
+            float endPercent = idealMax / range;
+
+            float startX = totalWidth * startPercent;
+            float width = totalWidth * (endPercent - startPercent);
+
+            // 設定 RectTransform 的 anchoredPosition 和 sizeDelta
+            perfectRect.anchoredPosition = new Vector2(startX, perfectRect.anchoredPosition.y);
+            perfectRect.sizeDelta = new Vector2(width, perfectRect.sizeDelta.y);
         }
 
         void Finish(bool success)
         {
             isFinished = true;
             isHeating = false;
-            Debug.Log(success ? "🔥 加熱成功！" : "💥 加熱失敗！");
+            Debug.Log(success ? "✅ 加熱成功！" : "❌ 加熱失敗！");
             OnHeatingResult?.Invoke(success);
         }
     }
