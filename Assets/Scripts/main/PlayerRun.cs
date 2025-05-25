@@ -27,6 +27,7 @@ public class PlayerRun : PlayerState
         player.ani.SetFloat("方向", player.way_value);
         // 玩家翻面
         player.Flip(player.hor_value);
+
         if (Mathf.Abs(player.hor_value) == 0 && Mathf.Abs(player.ver_value) == 0)
             stateMachine.SwitchState(player.playerIdle);
         if (Input.GetKeyUp(KeyCode.LeftShift))
