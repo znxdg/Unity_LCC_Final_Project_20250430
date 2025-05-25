@@ -9,19 +9,29 @@ namespace YuCheng
     {
 
         #region 基本參數&設置
-        [SerializeField, Range(0, 10), Header("基本數值")]
+        [Header("基本數值")]
+        [SerializeField, Range(0, 10)]
         public float moveSpeed = 3.5f;
+        [SerializeField, Range(0, 20)]
+        public float runSpeed = 7f;
+
         public Animator ani { get; private set; }           // 動畫控制元件
-        public Rigidbody2D rig { get; private set; }        // 2D 剛體元件 
+        public Rigidbody2D rig { get; private set; }        // 2D 剛體元件
+                                                            
         public float way_value;           // 控制方向參數
+
         public float action_value;        // 控制動作參數
+
         public float hor_value;
+
         public float ver_value;
+
         #endregion
 
         public StateMachine stateMachine { get; private set; }
         public PlayerIdle playerIdle { get; private set; }
         public PlayerWalk playerWalk { get; private set; } 
+        public PlayerRun playerRun { get; private set; }
 
         private void Awake()
         {
@@ -31,6 +41,7 @@ namespace YuCheng
             stateMachine = new StateMachine();
             playerIdle = new PlayerIdle(this, stateMachine, "玩家待機");
             playerWalk = new PlayerWalk(this, stateMachine, "玩家走路");
+            playerRun = new PlayerRun(this, stateMachine, "玩家跑步");
 
             stateMachine.Initialize(playerIdle);    // 指定預設為待機
         }

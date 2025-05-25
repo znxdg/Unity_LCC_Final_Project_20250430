@@ -14601,6 +14601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3.5
+  runSpeed: 5
   way_value: 0
   action_value: 0
   hor_value: 0
