@@ -157,7 +157,7 @@ namespace Rrondo
         {
             isFinished = true;
             isHeating = false;
-            Debug.Log(success ? "✅ 加熱成功！" : "❌ 加熱失敗！");
+            Debug.Log(success ? "加熱成功！" : " 加熱失敗！");
             OnHeatingResult?.Invoke(success);
         }
     }
