@@ -22,12 +22,26 @@ namespace YuCheng
         [SerializeField]
         private LayerMask layerCanFarm;
 
+        [Header("攜帶物模擬")]
+        [SerializeField]
+        private bool takeSomething;
+        [SerializeField]
+        public bool takeSeed;
+        [SerializeField]
+        public bool canHarvest;
+        [SerializeField]
+        public bool canWater;
+
         public Animator ani { get; private set; }           // 動畫控制元件
         public Rigidbody2D rig { get; private set; }        // 2D 剛體元件
-                                                            
+
+        [HideInInspector]
         public float way_value;           // 控制方向參數
+        [HideInInspector]
         public float action_value;        // 控制動作參數
+        [HideInInspector]
         public float hor_value;
+        [HideInInspector]
         public float ver_value;
         #endregion
 
@@ -36,6 +50,8 @@ namespace YuCheng
         public PlayerWalk playerWalk { get; private set; } 
         public PlayerRun playerRun { get; private set; }
         public PlayerWater playerWater { get; private set; }
+        public PlayerPlanting playerPlanting { get; private set; }
+        public PlayerHarvest playerHarvest { get; private set; }
 
         // ODG 繪製圖示事件
         private void OnDrawGizmos()
@@ -54,6 +70,8 @@ namespace YuCheng
             playerWalk = new PlayerWalk(this, stateMachine, "玩家走路");
             playerRun = new PlayerRun(this, stateMachine, "玩家跑步");
             playerWater = new PlayerWater(this, stateMachine, "玩家澆水");
+            playerPlanting = new PlayerPlanting(this, stateMachine, "玩家種植");
+            playerHarvest = new PlayerHarvest(this, stateMachine, "玩家採收");
             
 
             stateMachine.Initialize(playerIdle);    // 指定預設為待機
@@ -64,6 +82,9 @@ namespace YuCheng
             stateMachine.Update();
             hor_value = Input.GetAxis("Horizontal");
             ver_value = Input.GetAxis("Vertical");
+
+            ani.SetBool("拿取物品中", takeSomething);
+
             if (Mathf.Abs(hor_value) > Mathf.Abs(ver_value)) ver_value = 0;
             else hor_value = 0;
             if (ver_value > 0) way_value = 2;
@@ -72,18 +93,18 @@ namespace YuCheng
 
             if (way_value == 0)
             {
-                checkFarmSize = new Vector3(0.9f, 0.6f, 0);
-                checkFarmOffset = new Vector3(0, -1.2f, 1);
+                checkFarmSize = new Vector3(0.62f, 0.28f, 0);
+                checkFarmOffset = new Vector3(0, -1.17f, 1);
             }
             else if (way_value == 1)
             {
-                checkFarmSize = new Vector3(0.96f, 0.43f, 0);
-                checkFarmOffset = new Vector3(0.78f, -0.98f, 0);
+                checkFarmSize = new Vector3(0.44f, 0.34f, 0);
+                checkFarmOffset = new Vector3(0.77f, -0.63f, 0);
             }
             else
             {
-                checkFarmSize = new Vector3(1.02f, 1.02f, 0);
-                checkFarmOffset = new Vector3(0.03f, -0.59f, 0);
+                checkFarmSize = new Vector3(1.04f, 0.35f, 0);
+                checkFarmOffset = new Vector3(0.23f, -0.66f, 0);
             }
 #if UNITY_EDITOR
             if (ver_value > 0 || hor_value != 0 || ver_value < 0) UnityEditor.SceneView.RepaintAll();
@@ -104,12 +125,12 @@ namespace YuCheng
         /// 是否站在農田旁
         /// </summary>
         /// <returns></returns>
-        public bool IsFram()
+        public Collider2D IsFramToHit()
         {
             Collider2D hit = Physics2D.OverlapBox(
-                transform.position + checkFarmOffset, checkFarmSize, 0, layerCanFarm);
+                transform.position + transform.TransformDirection(checkFarmOffset), checkFarmSize, 0, layerCanFarm);
             // if (hit != null) Print.Text(hit.name, "#f99");
-            return hit != null;
+            return hit;
         }
     }
 }

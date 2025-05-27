@@ -2,24 +2,24 @@
 
 namespace YuCheng
 {
-
-    public class PlayerWater : PlayerState
+    /// <summary>
+    /// 玩家種植
+    /// </summary>
+    public class PlayerPlanting : PlayerState
     {
-        public PlayerWater(Player _player, StateMachine _stateMachine, string _name) : base(_player, _stateMachine, _name)
+        public PlayerPlanting(Player _player, StateMachine _stateMachine, string _name) : base(_player, _stateMachine, _name)
         {
         }
 
         public override void Enter()
         {
             base.Enter();
-            player.ani.SetTrigger("觸發澆水");
+            player.ani.SetTrigger("觸發種植");
         }
 
         public override void Exit()
         {
             base.Exit();
-            FarmTile tile = player.IsFramToHit().GetComponent<FarmTile>();
-            if (tile != null && !tile.isWatered) tile.Water();
         }
 
         public override void Update()
