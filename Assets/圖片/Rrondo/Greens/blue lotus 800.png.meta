@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      blue lotus 800_0: -38905255148707654
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

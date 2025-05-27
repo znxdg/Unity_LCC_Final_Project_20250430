@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tofly agaric 800_0: 1949483908869950548
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

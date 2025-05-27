@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      blue mashroom 32_0: 3284359169833664344
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

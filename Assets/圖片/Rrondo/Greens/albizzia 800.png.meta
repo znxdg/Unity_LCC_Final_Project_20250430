@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      albizzia 800_0: 1632587768483873982
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

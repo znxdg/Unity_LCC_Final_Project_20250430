@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      calendula 800_0: 7749418227248006532
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

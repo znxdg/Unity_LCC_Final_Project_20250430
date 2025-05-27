@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      echinacea 800_0: -6884111963897414311
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

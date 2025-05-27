@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dandelion 32_0: 2092748137886406656
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

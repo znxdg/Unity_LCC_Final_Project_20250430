@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      aloe vera 32_0: -7244039494175193319
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

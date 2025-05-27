@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      senna 800_0: 7836031326842931310
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      blue berries 800_0: 2567366921147007145
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

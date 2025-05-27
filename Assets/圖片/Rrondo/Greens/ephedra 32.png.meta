@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ephedra 32_0: -6204944567800994294
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

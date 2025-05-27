@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      senna 32_0: 3730979193100332651
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
