@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 namespace Rrondo
 {
     /// <summary>
     /// 我是加熱系統
-    /// 新增@@支援 UI 顯示完美加熱區間
+    /// 還有加熱的UI
     /// </summary>
     public class HeatManager : MonoBehaviour
     {
@@ -19,11 +20,7 @@ namespace Rrondo
         public float maxPlayTime = 15f;
         private float currentPlayTime = 0f;
 
-        [Header("藥品設定（可替換）")]
-        public float idealMin = 80f;
-        public float idealMax = 120f;
-        public float requiredStableTime = 5f;
-
+        [Header("失敗條件")]
         public float overheatFailTime = 3f;
         public float underheatFailTime = 6f;
 
@@ -34,18 +31,61 @@ namespace Rrondo
         private bool isHeating = false;
         private bool isFinished = false;
 
+        [Header("階段管理")]
+        private List<HeatPhase> heatPhases = new List<HeatPhase>();
+        private int currentPhaseIndex = 0;
+        private float phaseTimer = 0f;
+
         [Header("UI")]
-        public Slider temperatureSlider;         // 滑桿條
-        public Image fillBar;                   // 填滿區顏色
-        public Image perfectZoneImage;          // 顯示完美區間的 UI Image
+        public Slider temperatureSlider;
+        public Image fillBar;
+        public Image perfectZoneImage;
 
-        public System.Action<bool> OnHeatingResult;
+        public System.Action<bool, bool> OnHeatingResult; // success, isFake
 
-        public void Init(RecipeConfig config)
+        private bool isFakeRecipe = false; // 是否是假的廢丹流程
+
+        /// <summary>
+        /// 來自 RecipeConfig 的初始化
+        /// </summary>
+        public void Init(RecipeConfig config, bool fake = false)
         {
-            idealMin = config.idealMin;
-            idealMax = config.idealMax;
-            requiredStableTime = config.requiredStableTime;
+            isFakeRecipe = fake;
+
+            if (fake)
+            {
+                // 建立一個隨機的 HeatPhase
+                HeatPhase randomPhase = new HeatPhase();
+                int choice = Random.Range(0, 2); // 0 或 1
+
+                if (choice == 0)
+                {
+                    randomPhase.idealMin = 80f;
+                    randomPhase.idealMax = 100f;
+                }
+                else
+                {
+                    randomPhase.idealMin = 100f;
+                    randomPhase.idealMax = 120f;
+                }
+                randomPhase.duration = 3f;
+
+                heatPhases = new List<HeatPhase> { randomPhase };
+                maxPlayTime = 10f;
+                overheatFailTime = 2f;
+                underheatFailTime = 2f;
+            }
+            else
+            {
+                heatPhases = config.heatPhases;
+                maxPlayTime = config.maxPlayTime;
+                overheatFailTime = config.overheatFailTime;
+                underheatFailTime = config.underheatFailTime;
+            }
+
+            currentPhaseIndex = 0;
+            phaseTimer = 0f;
+
             ResetState();
         }
 
@@ -63,8 +103,10 @@ namespace Rrondo
             overheatTimer = 0;
             underheatTimer = 0;
             isFinished = false;
+            phaseTimer = 0f;
+            currentPhaseIndex = 0;
 
-            UpdatePerfectZone(); // 初始化時更新完美區域顯示
+            UpdatePerfectZone();
         }
 
         void Update()
@@ -75,14 +117,23 @@ namespace Rrondo
             temperature -= decayPerSecond * Time.deltaTime;
             temperature = Mathf.Clamp(temperature, 0f, maxTemperature);
 
-            // 狀態判定邏輯
-            if (temperature >= idealMin && temperature <= idealMax)
+            if (heatPhases == null || heatPhases.Count == 0)
+            {
+                Debug.LogError("heatPhases 未正確設定");
+                Finish(false);
+                return;
+            }
+
+            var currentPhase = heatPhases[currentPhaseIndex];
+            bool isInPerfectRange = (temperature >= currentPhase.idealMin && temperature <= currentPhase.idealMax);
+
+            if (isInPerfectRange)
             {
                 stableTimer += Time.deltaTime;
                 overheatTimer = 0;
                 underheatTimer = 0;
             }
-            else if (temperature > idealMax)
+            else if (temperature > currentPhase.idealMax)
             {
                 overheatTimer += Time.deltaTime;
                 underheatTimer = 0;
@@ -98,16 +149,30 @@ namespace Rrondo
             if (overheatTimer > overheatFailTime || underheatTimer > underheatFailTime)
             {
                 Finish(false);
+                return;
             }
 
-            if (stableTimer >= requiredStableTime)
+            if (stableTimer >= currentPhase.duration)
             {
-                Finish(true);
+                currentPhaseIndex++;
+                if (currentPhaseIndex >= heatPhases.Count)
+                {
+                    Finish(true);
+                    return;
+                }
+
+                stableTimer = 0f;
+                overheatTimer = 0f;
+                underheatTimer = 0f;
+                phaseTimer = 0f;
+
+                UpdatePerfectZone();
             }
 
             if (currentPlayTime >= maxPlayTime)
             {
                 Finish(false);
+                return;
             }
 
             UpdateUI();
@@ -125,16 +190,19 @@ namespace Rrondo
             if (temperatureSlider)
                 temperatureSlider.value = temperature / maxTemperature;
 
-            if (fillBar)
-                fillBar.color = (temperature >= idealMin && temperature <= idealMax) ? Color.green :
-                                (temperature > idealMax) ? Color.red : Color.blue;
+            var currentPhase = heatPhases[Mathf.Clamp(currentPhaseIndex, 0, heatPhases.Count - 1)];
 
-            // 可以選擇只在初始化後更新一次 perfect zone，如果 idealMin/Max 不變的話
+            if (fillBar)
+                fillBar.color = (temperature >= currentPhase.idealMin && temperature <= currentPhase.idealMax) ? Color.green :
+                                (temperature > currentPhase.idealMax) ? Color.red : Color.blue;
         }
 
         void UpdatePerfectZone()
         {
-            if (perfectZoneImage == null || temperatureSlider == null) return;
+            if (perfectZoneImage == null || temperatureSlider == null || heatPhases == null || heatPhases.Count == 0)
+                return;
+
+            var currentPhase = heatPhases[Mathf.Clamp(currentPhaseIndex, 0, heatPhases.Count - 1)];
 
             RectTransform fillArea = temperatureSlider.fillRect.parent.GetComponent<RectTransform>();
             RectTransform perfectRect = perfectZoneImage.GetComponent<RectTransform>();
@@ -142,13 +210,12 @@ namespace Rrondo
             float totalWidth = fillArea.rect.width;
             float range = maxTemperature;
 
-            float startPercent = idealMin / range;
-            float endPercent = idealMax / range;
+            float startPercent = currentPhase.idealMin / range;
+            float endPercent = currentPhase.idealMax / range;
 
             float startX = totalWidth * startPercent;
             float width = totalWidth * (endPercent - startPercent);
 
-            // 設定 RectTransform 的 anchoredPosition 和 sizeDelta
             perfectRect.anchoredPosition = new Vector2(startX, perfectRect.anchoredPosition.y);
             perfectRect.sizeDelta = new Vector2(width, perfectRect.sizeDelta.y);
         }
@@ -157,9 +224,13 @@ namespace Rrondo
         {
             isFinished = true;
             isHeating = false;
-            Debug.Log(success ? "加熱成功！" : " 加熱失敗！");
-            OnHeatingResult?.Invoke(success);
+
+            if (isFakeRecipe)
+                Log.Text(" 這是廢丹流程：" + (success ? "加熱成功但無效" : "加熱失敗，還是廢丹"));
+            else
+                Log.Text(success ? "加熱成功！" : " 加熱失敗！");
+
+            OnHeatingResult?.Invoke(success, isFakeRecipe);
         }
     }
 }
-
