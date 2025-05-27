@@ -12,6 +12,7 @@ namespace YuCheng
         public override void Enter()
         {
             base.Enter();
+            player.ani.SetTrigger("觸發澆水");
         }
 
         public override void Exit()
@@ -22,6 +23,7 @@ namespace YuCheng
         public override void Update()
         {
             base.Update();
+            if (timer >= 0.7f) stateMachine.SwitchState(player.playerIdle);
         }
     }
 }

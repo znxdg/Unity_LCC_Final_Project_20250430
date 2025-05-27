@@ -35,6 +35,7 @@ namespace YuCheng
         public PlayerIdle playerIdle { get; private set; }
         public PlayerWalk playerWalk { get; private set; } 
         public PlayerRun playerRun { get; private set; }
+        public PlayerWater playerWater { get; private set; }
 
         // ODG 繪製圖示事件
         private void OnDrawGizmos()
@@ -52,6 +53,7 @@ namespace YuCheng
             playerIdle = new PlayerIdle(this, stateMachine, "玩家待機");
             playerWalk = new PlayerWalk(this, stateMachine, "玩家走路");
             playerRun = new PlayerRun(this, stateMachine, "玩家跑步");
+            playerWater = new PlayerWater(this, stateMachine, "玩家澆水");
             
 
             stateMachine.Initialize(playerIdle);    // 指定預設為待機
@@ -83,8 +85,6 @@ namespace YuCheng
                 checkFarmSize = new Vector3(1.02f, 1.02f, 0);
                 checkFarmOffset = new Vector3(0.03f, -0.59f, 0);
             }
-
-            IsFram();
 #if UNITY_EDITOR
             if (ver_value > 0 || hor_value != 0 || ver_value < 0) UnityEditor.SceneView.RepaintAll();
 #endif
@@ -100,11 +100,15 @@ namespace YuCheng
             transform.eulerAngles = new Vector3(0, angle, 0);
         }
 
+        /// <summary>
+        /// 是否站在農田旁
+        /// </summary>
+        /// <returns></returns>
         public bool IsFram()
         {
             Collider2D hit = Physics2D.OverlapBox(
                 transform.position + checkFarmOffset, checkFarmSize, 0, layerCanFarm);
-            if (hit != null) Print.Text(hit.name, "#f99");
+            // if (hit != null) Print.Text(hit.name, "#f99");
             return hit != null;
         }
     }
