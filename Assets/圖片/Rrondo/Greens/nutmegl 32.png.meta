@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      nutmegl 32_0: -6545346157373128601
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

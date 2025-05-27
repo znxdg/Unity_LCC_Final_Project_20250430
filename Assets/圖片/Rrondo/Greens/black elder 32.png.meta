@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      black elder 32_0: -1801814922289566868
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

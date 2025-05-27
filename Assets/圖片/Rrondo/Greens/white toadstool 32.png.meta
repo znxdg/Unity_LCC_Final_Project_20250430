@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      white toadstool 32_0: 6507101278989442846
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

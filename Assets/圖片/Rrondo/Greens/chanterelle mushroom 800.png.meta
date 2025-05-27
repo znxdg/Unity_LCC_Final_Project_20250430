@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      chanterelle mushroom 800_0: -7384135461835860948
+      chanterelle mushroom 800_1: 6890711126878079758
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

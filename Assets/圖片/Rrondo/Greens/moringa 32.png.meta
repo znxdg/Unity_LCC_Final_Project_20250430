@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      moringa 32_0: -3356663379257994176
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
