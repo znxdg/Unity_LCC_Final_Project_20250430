@@ -392,60 +392,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &422249924
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 422249926}
-  - component: {fileID: 422249925}
-  m_Layer: 0
-  m_Name: "HeatManager_\u52A0\u71B1\u7CFB\u7D71"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &422249925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 422249924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5754ee87ede8d6a40be109e6298d456f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  temperature: 0
-  maxTemperature: 200
-  increasePerClick: 15
-  decayPerSecond: 20
-  maxPlayTime: 15
-  overheatFailTime: 3
-  underheatFailTime: 6
-  temperatureSlider: {fileID: 687681283}
-  fillBar: {fileID: 947784190}
-  perfectZoneImage: {fileID: 1983274476}
---- !u!4 &422249926
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 422249924}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 421.5, y: 237, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &570174313
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,6 +683,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1826678395}
+  - {fileID: 1983274475}
   - {fileID: 277450106}
   - {fileID: 1224121471}
   m_Father: {fileID: 1608662160}
@@ -880,7 +827,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 6676888712972216051, guid: c126b766b772c9b4ca9562662ee21287, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1326,7 +1273,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 422249925}
+      - m_Target: {fileID: 1608662161}
         m_TargetAssemblyTypeName: Rrondo.HeatManager, Assembly-CSharp
         m_MethodName: OnHeatButtonClick
         m_Mode: 1
@@ -2384,6 +2331,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1593790249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1593790251}
+  - component: {fileID: 1593790250}
+  m_Layer: 0
+  m_Name: "\u6211\u662FGameManager"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1593790250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593790249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3497121643ecfb74982a177c755e856c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heatManager: {fileID: 1608662161}
+  selectedRecipe: {fileID: 11400000, guid: df9b94a70a5f2564bbe0a9cd964502e4, type: 2}
+--- !u!4 &1593790251
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593790249}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5775945, y: 0.2976767, z: -0.041156296}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1608662156
 GameObject:
   m_ObjectHideFlags: 0
@@ -2396,8 +2389,9 @@ GameObject:
   - component: {fileID: 1608662159}
   - component: {fileID: 1608662158}
   - component: {fileID: 1608662157}
+  - component: {fileID: 1608662161}
   m_Layer: 5
-  m_Name: HeatCanvas
+  m_Name: "HeatCanvas_\u52A0\u71B1\u7CFB\u7D71"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2480,7 +2474,6 @@ RectTransform:
   m_Children:
   - {fileID: 1725430033}
   - {fileID: 687681282}
-  - {fileID: 1983274475}
   - {fileID: 1010452792}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2489,6 +2482,29 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1608662161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608662156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5754ee87ede8d6a40be109e6298d456f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temperature: 0
+  maxTemperature: 200
+  increasePerClick: 15
+  decayPerSecond: 20
+  maxPlayTime: 15
+  overheatFailTime: 3
+  underheatFailTime: 6
+  temperatureSlider: {fileID: 687681283}
+  fillBar: {fileID: 947784190}
+  perfectZoneImage: {fileID: 1983274476}
+  temperatureText: {fileID: 1610936845}
 --- !u!1 &1610936843
 GameObject:
   m_ObjectHideFlags: 0
@@ -3163,13 +3179,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1608662160}
+  m_Father: {fileID: 687681282}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 848, y: 295}
-  m_SizeDelta: {x: 100, y: -980}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 213, y: 3.9270477}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1983274476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3437,7 +3453,6 @@ SceneRoots:
   - {fileID: 704910114}
   - {fileID: 1608662160}
   - {fileID: 1078969903}
-  - {fileID: 422249926}
   - {fileID: 1360602491}
   - {fileID: 981781308}
   - {fileID: 6954074374481387226}
@@ -3445,3 +3460,4 @@ SceneRoots:
   - {fileID: 103501592}
   - {fileID: 2092099352}
   - {fileID: 1874727174}
+  - {fileID: 1593790251}

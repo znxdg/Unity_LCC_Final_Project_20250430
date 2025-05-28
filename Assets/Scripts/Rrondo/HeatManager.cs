@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using TMPro;
 
 namespace Rrondo
 {
@@ -44,6 +45,7 @@ namespace Rrondo
         public System.Action<bool, bool> OnHeatingResult; // success, isFake
 
         private bool isFakeRecipe = false; // 是否是假的廢丹流程
+        public TextMeshProUGUI temperatureText;
 
         /// <summary>
         /// 來自 RecipeConfig 的初始化
@@ -112,6 +114,8 @@ namespace Rrondo
         void Update()
         {
             if (!isHeating || isFinished) return;
+            if (temperatureText)
+                temperatureText.text = Mathf.RoundToInt(temperature) + "°";
 
             currentPlayTime += Time.deltaTime;
             temperature -= decayPerSecond * Time.deltaTime;
