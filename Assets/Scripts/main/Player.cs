@@ -14,14 +14,6 @@ namespace YuCheng
         [SerializeField, Range(0, 20)]
         public float runSpeed = 7f;
 
-        [Header("農田")]
-        [SerializeField]
-        private Vector3 checkFarmSize = Vector3.one;
-        [SerializeField]
-        private Vector3 checkFarmOffset;
-        [SerializeField]
-        private LayerMask layerCanFarm;
-
         [Header("攜帶物模擬")]
         [SerializeField]
         private bool takeSomething;
@@ -30,7 +22,7 @@ namespace YuCheng
         [SerializeField]
         public bool canHarvest;
         [SerializeField]
-        public bool canWater;
+        public bool canWater = true;
 
         public Animator ani { get; private set; }           // 動畫控制元件
         public Rigidbody2D rig { get; private set; }        // 2D 剛體元件
@@ -52,13 +44,6 @@ namespace YuCheng
         public PlayerWater playerWater { get; private set; }
         public PlayerPlanting playerPlanting { get; private set; }
         public PlayerHarvest playerHarvest { get; private set; }
-
-        // ODG 繪製圖示事件
-        private void OnDrawGizmos()
-        {
-            Gizmos.color = new Color(1, 0.3f, 0.3f, 0.6f);
-            Gizmos.DrawCube(transform.position + transform.TransformDirection(checkFarmOffset), checkFarmSize);
-        }
 
         private void Awake()
         {
@@ -90,25 +75,6 @@ namespace YuCheng
             if (ver_value > 0) way_value = 2;
             if (hor_value != 0) way_value = 1;
             if (ver_value < 0) way_value = 0;
-
-            if (way_value == 0)
-            {
-                checkFarmSize = new Vector3(0.62f, 0.28f, 0);
-                checkFarmOffset = new Vector3(0, -1.17f, 1);
-            }
-            else if (way_value == 1)
-            {
-                checkFarmSize = new Vector3(0.44f, 0.34f, 0);
-                checkFarmOffset = new Vector3(0.77f, -0.63f, 0);
-            }
-            else
-            {
-                checkFarmSize = new Vector3(1.04f, 0.35f, 0);
-                checkFarmOffset = new Vector3(0.23f, -0.66f, 0);
-            }
-#if UNITY_EDITOR
-            if (ver_value > 0 || hor_value != 0 || ver_value < 0) UnityEditor.SceneView.RepaintAll();
-#endif
         }
         /// <summary>
         /// 翻面
@@ -121,16 +87,5 @@ namespace YuCheng
             transform.eulerAngles = new Vector3(0, angle, 0);
         }
 
-        /// <summary>
-        /// 是否站在農田旁
-        /// </summary>
-        /// <returns></returns>
-        public Collider2D IsFramToHit()
-        {
-            Collider2D hit = Physics2D.OverlapBox(
-                transform.position + transform.TransformDirection(checkFarmOffset), checkFarmSize, 0, layerCanFarm);
-            // if (hit != null) Print.Text(hit.name, "#f99");
-            return hit;
-        }
     }
 }

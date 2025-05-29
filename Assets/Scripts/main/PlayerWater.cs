@@ -5,20 +5,22 @@ namespace YuCheng
 
     public class PlayerWater : PlayerState
     {
+        private FarmTile tile;
+
         public PlayerWater(Player _player, StateMachine _stateMachine, string _name) : base(_player, _stateMachine, _name)
         {
         }
 
         public override void Enter()
         {
+            tile = PlayerCheckFarm.instance.IsFramToHit().GetComponent<FarmTile>();
             base.Enter();
-            player.ani.SetTrigger("觸發澆水");
+            if (!tile.isWatered) player.ani.SetTrigger("觸發澆水");
         }
 
         public override void Exit()
         {
             base.Exit();
-            FarmTile tile = player.IsFramToHit().GetComponent<FarmTile>();
             if (tile != null && !tile.isWatered) tile.Water();
         }
 
