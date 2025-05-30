@@ -18,11 +18,9 @@ namespace YuCheng
         [SerializeField]
         private bool takeSomething;
         [SerializeField]
-        public bool takeSeed;
+        public bool takeSeed;           // 判斷是否帶有種子
         [SerializeField]
-        public bool canHarvest;
-        [SerializeField]
-        public bool canWater = true;
+        public bool canWater = true;    // 判斷是否需要取水
 
         public Animator ani { get; private set; }           // 動畫控制元件
         public Rigidbody2D rig { get; private set; }        // 2D 剛體元件

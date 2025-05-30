@@ -44,9 +44,15 @@ namespace YuCheng
             timer += Time.deltaTime;
             if (plantHealth)
             {
+                if (currentStage >= (growthSprites.Length - 2)) return;
                 if (timer - lastWaterTime >= WaterInterval)
                 {
                     if (tile.isWatered) tile.FarmColorState();
+                    if (timer - lastWaterTime >= waterIntervalTime)
+                    {
+                        plantHealth = false;
+                        return;
+                    }
                 }
 
                 int stage = Mathf.FloorToInt(timer / growSpendTime);
@@ -55,6 +61,11 @@ namespace YuCheng
                     currentStage = stage;
                     sr.sprite = growthSprites[currentStage]; 
                 }
+            }
+            else
+            {
+                currentStage = growthSprites.Length - 1;
+                sr.sprite = growthSprites[currentStage];
             }
         }
 
@@ -72,6 +83,7 @@ namespace YuCheng
         public void HarvestPlants()
         {
             Destroy(gameObject);
+            tile.isPlanting = false;
         }
     }
 }

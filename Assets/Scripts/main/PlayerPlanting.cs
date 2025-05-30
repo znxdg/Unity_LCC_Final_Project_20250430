@@ -16,13 +16,20 @@ namespace YuCheng
         {
             base.Enter();
             tile = PlayerCheckFarm.instance.IsFramToHit().GetComponent<FarmTile>();
-            if (!tile.isPlanting) player.ani.SetTrigger("觸發種植");
+            if (!tile.isPlanting)
+            {
+                player.ani.SetTrigger("觸發種植");
+            }
+            else
+            {
+                stateMachine.SwitchState(player.playerIdle);
+            }
         }
 
         public override void Exit()
         {
             base.Exit();
-            tile.PlantCrop();
+            if (!tile.isPlanting)  tile.PlantCrop();
         }
 
         public override void Update()
