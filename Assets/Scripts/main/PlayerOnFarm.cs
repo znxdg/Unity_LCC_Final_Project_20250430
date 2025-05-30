@@ -33,8 +33,10 @@ namespace YuCheng
             if ((PlayerCheckFarm.instance.IsFramToHit() != null) && Input.GetKeyDown(KeyCode.E) && player.takeSeed)
                 stateMachine.SwitchState(player.playerPlanting);
             // 如果面對農田 處於能採收狀態 並按下E鍵 就切換到 採收狀態
-            if ((PlayerCheckFarm.instance.IsFramToHit() != null) && Input.GetKeyDown(KeyCode.E) && player.canHarvest)
-                stateMachine.SwitchState(player.playerHarvest);
+            if ((PlayerCheckFarm.instance.IsFramToHit() != null) && Input.GetKeyDown(KeyCode.E) 
+                && player.canHarvest && plantGrowSystem.instance != null)
+                if (plantGrowSystem.instance.currentStage >= (plantGrowSystem.instance.growthSprites.Length - 2))
+                    stateMachine.SwitchState(player.playerHarvest);
         }
     }
 }

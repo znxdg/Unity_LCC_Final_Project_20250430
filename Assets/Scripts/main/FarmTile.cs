@@ -24,7 +24,7 @@ namespace YuCheng
         public void Water()
         {
             FarmColorState();
-            plantGrowSystem.instance.LogWaterTime();
+            if (plantGrowSystem.instance != null) plantGrowSystem.instance.LogWaterTime();
         }
 
         public void PlantCrop()
@@ -32,6 +32,7 @@ namespace YuCheng
             GameObject crop = Instantiate(cropPrefab, plantPoint.position, Quaternion.identity);
             crop.GetComponent<plantGrowSystem>().AssignFarmTile(this);
             isPlanting =true;
+            if (isWatered) plantGrowSystem.instance.LogWaterTime();
         }
 
         public void FarmColorState()

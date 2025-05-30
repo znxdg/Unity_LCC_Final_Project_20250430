@@ -20,13 +20,13 @@ namespace YuCheng
         private FarmTile tile;
 
         [SerializeField, Header("作物成長階段圖")]
-        private Sprite[] growthSprites;
+        public Sprite[] growthSprites;
         [SerializeField]
         private float growSpendTime = 1f;      // 成長至下一階段所需時間
         [SerializeField]
         private float waterIntervalTime = 5f;   // 至枯萎的時間
 
-        private int currentStage = 0;           // 當前植物成長階段
+        public int currentStage = 0;           // 當前植物成長階段
         private bool plantHealth = true;        // 是否健康
         private float lastWaterTime;            // 上次澆水時間
         private float WaterInterval = 3;        // 澆水間隔(土地變乾的時間)
@@ -60,12 +60,18 @@ namespace YuCheng
 
         public void LogWaterTime()
         {
+            if (!this.enabled) return;
             lastWaterTime = timer;
         }
 
         public void AssignFarmTile(FarmTile _tile)
         {
             tile = _tile;
+        }
+
+        public void HarvestPlants()
+        {
+            Destroy(gameObject);
         }
     }
 }

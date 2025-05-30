@@ -107,5 +107,6 @@ MonoBehaviour:
   - {fileID: -4518821355959930577, guid: 92047b179d1c0d24a81b753b520442c7, type: 3}
   - {fileID: 1311939846730438687, guid: 92047b179d1c0d24a81b753b520442c7, type: 3}
   - {fileID: 7334723496732485779, guid: 92047b179d1c0d24a81b753b520442c7, type: 3}
-  growSpendTime: 10
+  growSpendTime: 1
   waterIntervalTime: 5
+  currentStage: 0

@@ -17,7 +17,6 @@ namespace YuCheng
             base.Enter();
             tile = PlayerCheckFarm.instance.IsFramToHit().GetComponent<FarmTile>();
             if (!tile.isPlanting) player.ani.SetTrigger("觸發種植");
-
         }
 
         public override void Exit()
