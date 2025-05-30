@@ -25,6 +25,8 @@ namespace YuCheng
         public override void Update()
         {
             base.Update();
+
+            if(!player.canMove) return;
             // Print.Text($"玩家=> 水平軸:{hor_value}；垂直軸:{ver_value}", "#f93");
             if (Mathf.Abs(player.hor_value) > 0.1f || Mathf.Abs(player.ver_value) > 0.1f)
                 stateMachine.SwitchState(player.playerWalk);

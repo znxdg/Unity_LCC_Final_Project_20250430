@@ -19,16 +19,16 @@ namespace Rrondo
 
         [Header("時間控制")]
         public float maxPlayTime = 15f;
-        private float currentPlayTime = 0f;
+        public float currentPlayTime = 0f;
 
         [Header("失敗條件")]
         public float overheatFailTime = 3f;
         public float underheatFailTime = 6f;
 
         [Header("狀態")]
-        private float stableTimer = 0f;
-        private float overheatTimer = 0f;
-        private float underheatTimer = 0f;
+        public float stableTimer = 0f;
+        public float overheatTimer = 0f;
+        public float underheatTimer = 0f;
         private bool isHeating = false;
         private bool isFinished = false;
 
@@ -48,6 +48,11 @@ namespace Rrondo
 
         private bool isFakeRecipe = false; // 是否是假的廢丹流程
         public TextMeshProUGUI temperatureText;
+
+        #region 小游新增
+        private bool startHeat = false;
+        public HeatPhase currentPhase;
+        #endregion
 
         /// <summary>
         /// 來自 RecipeConfig 的初始化
@@ -115,6 +120,9 @@ namespace Rrondo
 
         void Update()
         {
+            #region 小游新增
+            if (!startHeat) return;
+            #endregion
             if (!isHeating || isFinished) return;
             if (temperatureText)
                 temperatureText.text = Mathf.RoundToInt(temperature) + "°";
@@ -130,7 +138,8 @@ namespace Rrondo
                 return;
             }
 
-            var currentPhase = heatPhases[currentPhaseIndex];
+            currentPhase = heatPhases[currentPhaseIndex];
+
             bool isInPerfectRange = (temperature >= currentPhase.idealMin && temperature <= currentPhase.idealMax);
 
             if (isInPerfectRange)
@@ -180,7 +189,11 @@ namespace Rrondo
                 Finish(false);
                 return;
             }
-
+            #region 小游新增
+            float remainingTime = maxPlayTime - currentPlayTime;
+            remainingTime = Mathf.Max(remainingTime, 0f);
+            //Log.Text($"加熱系統：{remainingTime.ToString()}/{maxPlayTime}");
+            #endregion
             UpdateUI();
         }
 
@@ -189,6 +202,9 @@ namespace Rrondo
             if (!isHeating || isFinished) return;
             temperature += increasePerClick;
             temperature = Mathf.Clamp(temperature, 0, maxTemperature);
+            #region 小游新增
+            startHeat = true;
+            #endregion
         }
 
         void UpdateUI()
@@ -237,6 +253,10 @@ namespace Rrondo
                 Log.Text(success ? "加熱成功！" : " 加熱失敗！");
 
             OnHeatingResult?.Invoke(success, isFakeRecipe);
+
+            #region 小游新增
+            return;
+            #endregion
 
             OnHeatingFinished?.Invoke(success); // 呼叫下一個流程
         }
