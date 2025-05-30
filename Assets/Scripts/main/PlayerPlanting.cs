@@ -7,6 +7,7 @@ namespace YuCheng
     /// </summary>
     public class PlayerPlanting : PlayerState
     {
+        private FarmTile tile;
         public PlayerPlanting(Player _player, StateMachine _stateMachine, string _name) : base(_player, _stateMachine, _name)
         {
         }
@@ -14,12 +15,15 @@ namespace YuCheng
         public override void Enter()
         {
             base.Enter();
-            player.ani.SetTrigger("觸發種植");
+            tile = PlayerCheckFarm.instance.IsFramToHit().GetComponent<FarmTile>();
+            if (!tile.isPlanting) player.ani.SetTrigger("觸發種植");
+
         }
 
         public override void Exit()
         {
             base.Exit();
+            tile.PlantCrop();
         }
 
         public override void Update()

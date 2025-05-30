@@ -21,7 +21,10 @@ namespace YuCheng
         public override void Exit()
         {
             base.Exit();
-            if (tile != null && !tile.isWatered) tile.Water();
+            if (tile != null && !tile.isWatered)
+            {
+                tile.Water();
+            }
         }
 
         public override void Update()

@@ -23,7 +23,6 @@ namespace YuCheng
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.CompareTag(farmTag)) farmObject = collision.gameObject;
-            Print.Text(farmObject.name);
         }
 
         /// <summary>
