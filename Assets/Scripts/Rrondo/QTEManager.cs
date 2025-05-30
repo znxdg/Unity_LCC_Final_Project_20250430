@@ -7,6 +7,7 @@ namespace Rrondo
 {
     /// <summary>
     /// 我是QTE系統
+    /// 負責整個QTE的邏輯
     /// </summary>
     public class QTEManager : MonoBehaviour
     {
