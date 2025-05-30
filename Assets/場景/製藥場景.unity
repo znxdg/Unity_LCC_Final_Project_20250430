@@ -269,6 +269,61 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &119131133
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 119131135}
+  - component: {fileID: 119131134}
+  m_Layer: 0
+  m_Name: "\u6211\u662FQTEManager"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &119131134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119131133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27082e816ccbb264aa76a3c0241cb43c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathPoints: []
+  lightDot: {fileID: 0}
+  qteUIPrefab: {fileID: 0}
+  uiParent: {fileID: 0}
+  allowedKeys: QWERTYASDFGH
+  minQTEEvents: 2
+  maxQTEEvents: 4
+  minKeysPerEvent: 6
+  maxKeysPerEvent: 8
+  totalMoveDuration: 6
+  playerLevel: 0
+--- !u!4 &119131135
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119131133}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5775945, y: 0.2976767, z: -0.041156296}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &135629030
 GameObject:
   m_ObjectHideFlags: 0
@@ -2361,6 +2416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heatManager: {fileID: 1608662161}
+  qteManager: {fileID: 119131134}
   selectedRecipe: {fileID: 11400000, guid: df9b94a70a5f2564bbe0a9cd964502e4, type: 2}
 --- !u!4 &1593790251
 Transform:
@@ -3461,3 +3517,4 @@ SceneRoots:
   - {fileID: 2092099352}
   - {fileID: 1874727174}
   - {fileID: 1593790251}
+  - {fileID: 119131135}

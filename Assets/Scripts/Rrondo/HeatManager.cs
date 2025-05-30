@@ -44,6 +44,8 @@ namespace Rrondo
 
         public System.Action<bool, bool> OnHeatingResult; // success, isFake
 
+        public event System.Action<bool> OnHeatingFinished; // 結束流程 換到下一個流程
+
         private bool isFakeRecipe = false; // 是否是假的廢丹流程
         public TextMeshProUGUI temperatureText;
 
@@ -235,6 +237,8 @@ namespace Rrondo
                 Log.Text(success ? "加熱成功！" : " 加熱失敗！");
 
             OnHeatingResult?.Invoke(success, isFakeRecipe);
+
+            OnHeatingFinished?.Invoke(success); // 呼叫下一個流程
         }
     }
 }
