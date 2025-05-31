@@ -50,6 +50,8 @@ namespace Rrondo
         public TextMeshProUGUI temperatureText;
 
         #region 小游新增
+        private string finalState;
+        public TextMeshProUGUI heatFinalState;
         private bool startHeat = false;
         public HeatPhase currentPhase;
         #endregion
@@ -248,9 +250,17 @@ namespace Rrondo
             isHeating = false;
 
             if (isFakeRecipe)
+            {
                 Log.Text(" 這是廢丹流程：" + (success ? "加熱成功但無效" : "加熱失敗，還是廢丹"));
+            }
             else
-                Log.Text(success ? "加熱成功！" : " 加熱失敗！");
+            {
+                finalState = success ? "加熱成功！！！" : " 加熱失敗！！！";
+                Log.Text(finalState);
+                if (heatFinalState)
+                    heatFinalState.text = $"{finalState}";
+            }
+
 
             OnHeatingResult?.Invoke(success, isFakeRecipe);
 
