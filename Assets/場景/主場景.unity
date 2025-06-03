@@ -20245,6 +20245,7 @@ MonoBehaviour:
   runSpeed: 5
   takeSomething: 0
   takeSeed: 1
+  canHarvest: 0
   canWater: 1
   way_value: 0
   action_value: 0
@@ -20688,7 +20689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &612168960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20929,7 +20930,7 @@ MonoBehaviour:
       m_Calls: []
 --- !u!114 &612168968
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -38474,7 +38475,7 @@ Transform:
   m_GameObject: {fileID: 1195270060}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8419055, y: -1.4699999, z: -10}
+  m_LocalPosition: {x: -1.8308268, y: -1.4699999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40530,12 +40531,12 @@ GameObject:
   - component: {fileID: 1567614229}
   - component: {fileID: 1567614228}
   m_Layer: 0
-  m_Name: "\u89F8\u767C\u8FB2\u7530\u6559\u5B78"
+  m_Name: "Fungus_\u89F8\u767C\u8FB2\u7530\u6559\u5B78"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1567614218
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -40823,7 +40824,7 @@ MonoBehaviour:
   colliderVar: {fileID: 0}
 --- !u!114 &1567614228
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -40840,7 +40841,7 @@ MonoBehaviour:
   colliderVar: {fileID: 0}
 --- !u!114 &1567614229
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -40867,7 +40868,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1567614230
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -47591,11 +47592,11 @@ SceneRoots:
   - {fileID: 359257796}
   - {fileID: 678356028}
   - {fileID: 544968253}
-  - {fileID: 612168963}
   - {fileID: 703878949}
   - {fileID: 120856720}
   - {fileID: 322243180}
   - {fileID: 1535652625}
-  - {fileID: 1567614226}
   - {fileID: 1961694683}
   - {fileID: 333921581}
+  - {fileID: 612168963}
+  - {fileID: 1567614226}

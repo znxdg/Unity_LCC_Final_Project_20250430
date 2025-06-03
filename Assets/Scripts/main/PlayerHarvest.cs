@@ -20,7 +20,7 @@ namespace YuCheng
         public override void Exit()
         {
             base.Exit();
-            plantGrowSystem.instance.HarvestPlants();       // 移除預置物
+             // plantGrowSystem.instance.HarvestPlants();       // 移除預置物
         }
 
         public override void Update()

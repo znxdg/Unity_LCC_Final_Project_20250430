@@ -13,13 +13,15 @@ namespace YuCheng
         public float moveSpeed = 3.5f;
         [SerializeField, Range(0, 20)]
         public float runSpeed = 7f;
-        public bool canMove {  get; set; } = false;
+        public bool canMove {  get; set; } = true;
 
         [Header("攜帶物模擬")]
         [SerializeField]
         private bool takeSomething;
         [SerializeField]
         public bool takeSeed;           // 判斷是否帶有種子
+        [SerializeField]
+        public bool canHarvest;         // 判斷是否帶有種子
         [SerializeField]
         public bool canWater = true;    // 判斷是否需要取水
 

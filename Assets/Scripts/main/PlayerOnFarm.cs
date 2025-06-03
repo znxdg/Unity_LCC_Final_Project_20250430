@@ -25,19 +25,19 @@ namespace YuCheng
         public override void Update()
         {
             base.Update();
-
-            // 如果面對農田 處於能澆水狀態 並按下E鍵 就切換到 澆水狀態
-            if ((PlayerCheckFarm.instance.IsFramToHit() != null) && Input.GetKeyDown(KeyCode.Space) && player.canWater) 
-                stateMachine.SwitchState(player.playerWater);
-            // 如果面對農田 處於能種植狀態 並按下E鍵 就切換到 種植狀態
-            if ((PlayerCheckFarm.instance.IsFramToHit() != null) && Input.GetKeyDown(KeyCode.E) 
-                && player.takeSeed)
-                stateMachine.SwitchState(player.playerPlanting);
-            // 如果面對農田 處於能採收狀態 並按下E鍵 就切換到 採收狀態
-            if ((PlayerCheckFarm.instance.IsFramToHit() != null) && Input.GetKeyDown(KeyCode.E)
-                && plantGrowSystem.instance != null)
-                if (plantGrowSystem.instance.currentStage >= (plantGrowSystem.instance.growthSprites.Length - 2))
+            // 如果玩家面對農田
+            if (PlayerCheckFarm.instance.IsFramToHit() != null)
+            {
+                // 處於能澆水狀態 並按下空白鍵 就切換到 澆水狀態
+                if (Input.GetKeyDown(KeyCode.Space) && player.canWater)
+                    stateMachine.SwitchState(player.playerWater);
+                // 處於能種植狀態 並按下E鍵 就切換到 種植狀態
+                if (Input.GetKeyDown(KeyCode.E) && player.takeSeed)
+                    stateMachine.SwitchState(player.playerPlanting);
+                // 按下E鍵 就切換到 採收狀態
+                if (Input.GetKeyDown(KeyCode.E) && player.canHarvest)
                     stateMachine.SwitchState(player.playerHarvest);
+            }
         }
     }
 }
