@@ -23,27 +23,96 @@ namespace YuCheng
 
         [Header("狀態切換設定")]
         [SerializeField] 
-        private float timePerStage = 5f;   // 每階段持續秒數，可在 Inspector 調整
+        private float growInterval = 5f;                                // 生長間隔
+        private float wetDuration = 10f;                                // 濕潤時間
+        private float dryTolerance = 5f;                                // 可維持乾燥多久
+        private float growTimer;                                        // 成長計時器
+        private float wetTimer;                                         // 濕潤計時器
+        private int currentStateID;                                     // 成長階段數值
+
+        [Header("作物(子物件)狀態")]
+        private bool isDead = false;                                    // 作物是否死亡
+
+        [Header("農田(父物件)狀態")]
+        [SerializeField]
+        FarmTile farmTile;                                              // 取得掛載於農田上的腳本
+        [SerializeField]
+        private bool isWater;                                           // 取得農田的濕潤狀態
 
         private SpriteRenderer spriteRenderer;
         private Coroutine growCoroutine;
 
+        PlantState[] growStages = new PlantState[]
+        {
+            PlantState.Seed,
+            PlantState.Growing_1,
+            PlantState.Growing_2,
+            PlantState.Growing_3,
+            PlantState.Mature
+        };
+
         void Awake()
         {
-            spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer = GetComponent<SpriteRenderer>();            // 取得當前作物存放顯示圖片的參數欄位
+            farmTile = transform.parent.GetComponent<FarmTile>();       // 取得父物件(農田)掛載的腳本
+            isWater = farmTile.isWatered;                               // 確認當前農田濕潤狀況
+            wetTimer = wetDuration;                                     // 初始化濕潤計時器
+            growTimer = growInterval;                                   // 初始化成長計時器
         }
 
         private void Start()
         {
-            SetState(PlantState.Seed);
-            growCoroutine = StartCoroutine(GrowRoutine());
+            SetState(PlantState.Seed);                                  // 設定作物初始狀態為種子
+            //growCoroutine = StartCoroutine(GrowRoutine());
+        }
+
+        private void Update()
+        {
+            if (isDead) return;
+            if (currentStateID == growStages.Length)
+            {
+                farmTile.canHarvest = true;
+                return;
+            }
+            isWater = farmTile.isWatered;                               // 持續更新當前農田濕潤狀況
+
+
+            #region 成長倒數
+            growTimer -= Time.deltaTime;
+            if (growTimer <= 0f && currentStateID < growStages.Length)
+            {
+                SetState(growStages[currentStateID]);
+                growTimer = growInterval;
+                currentStateID += 1;
+            }
+            #endregion
+
+            #region 濕潤狀態倒數
+            if (isWater)
+            {
+                wetTimer -= Time.deltaTime;
+                if (wetTimer <= 0f)
+                {
+                    farmTile.FarmColorState();  // 變乾
+                    wetTimer = wetDuration;
+                }
+            }
+            else
+            {
+                dryTolerance -= Time.deltaTime;
+                if (dryTolerance <= 0f)
+                {
+                    Die(); // 作物死亡
+                }
+            } 
+            #endregion
         }
 
         /// <summary>
         /// 設置狀態與圖片序列化
         /// </summary>
         /// <param name="newState"></param>
-        public void SetState(PlantState newState)
+        private void SetState(PlantState newState)
         {
             currentState = newState;
 
@@ -58,28 +127,12 @@ namespace YuCheng
         }
 
         /// <summary>
-        /// 設定每 timePerStage 秒，更新作物圖片
+        /// 作物死亡
         /// </summary>
-        /// <returns></returns>
-        private IEnumerator GrowRoutine()
+        private void Die()
         {
-            // 我們定義的成長順序，只走到 Mature 為止
-            PlantState[] growStages = new PlantState[] 
-            {
-                PlantState.Seed,
-                PlantState.Growing_1,
-                PlantState.Growing_2,
-                PlantState.Growing_3,
-                PlantState.Mature
-            };
-
-            int index = 0;
-            while (index < growStages.Length)
-            {
-                SetState(growStages[index]);
-                index++;
-                yield return new WaitForSeconds(timePerStage);
-            }
+            SetState(PlantState.Withered);
+            isDead = true;
         }
     }
 }

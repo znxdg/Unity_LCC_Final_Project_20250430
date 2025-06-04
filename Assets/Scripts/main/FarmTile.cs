@@ -15,6 +15,7 @@ namespace YuCheng
         private SpriteRenderer sr;          // 農田本身
         public bool isWatered = false;      // 該農田是否濕潤
         public bool isPlanting = false;     // 該農田上是否有植物
+        public bool canHarvest = false;     // 是否可以採收
 
         private void Awake()
         {
@@ -23,12 +24,12 @@ namespace YuCheng
         }
 
         /// <summary>
-        /// 於農田上澆水
+        /// 對農田澆水
+        /// 角色澆水前會判斷農田是否為濕潤
         /// </summary>
         public void Water()
         {
-            FarmColorState();               // 改變農田顏色
-            //if (plantGrowSystem.instance != null) plantGrowSystem.instance.LogWaterTime();
+            FarmColorState();
         }
 
         /// <summary>
@@ -49,11 +50,13 @@ namespace YuCheng
             {
                 isWatered = true;
                 sr.color = new Color(0.7f, 0.7f, 0.7f);
+                Print.Text("變濕");
             } 
             else
             {
-                isWatered=false;
+                isWatered =false;
                 sr.color = new Color(1, 1, 1);
+                Print.Text("變乾");
             }
         }
     }
