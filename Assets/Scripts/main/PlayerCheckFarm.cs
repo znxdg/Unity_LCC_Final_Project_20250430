@@ -20,10 +20,25 @@ namespace YuCheng
             }
         }
 
+        /// <summary>
+        /// 碰撞箱進入農田做儲存
+        /// </summary>
+        /// <param name="collision"></param>
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.CompareTag(farmTag)) farmObject = collision.gameObject;
+            if (collision.CompareTag(farmTag))
+                farmObject = collision.gameObject;
         }
+
+        /// <summary>
+        /// 碰撞箱離開農田做清除
+        /// </summary>
+        /// <param name="collision"></param>
+        //private void OnTriggerExit2D(Collider2D collision)
+        //{
+        //    if (collision.CompareTag(farmTag))
+        //        farmObject = null;
+        //}
 
         /// <summary>
         /// 是否站在農田旁

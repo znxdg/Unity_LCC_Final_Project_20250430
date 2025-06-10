@@ -28,6 +28,7 @@ namespace YuCheng
         private float dryTolerance = 5f;                                // 可維持乾燥多久
         private float growTimer;                                        // 成長計時器
         private float wetTimer;                                         // 濕潤計時器
+        private float dryTimer;                                         // 乾燥計時器
         private int currentStateID;                                     // 成長階段數值
 
         [Header("作物(子物件)狀態")]
@@ -58,6 +59,7 @@ namespace YuCheng
             isWater = farmTile.isWatered;                               // 確認當前農田濕潤狀況
             wetTimer = wetDuration;                                     // 初始化濕潤計時器
             growTimer = growInterval;                                   // 初始化成長計時器
+            dryTimer = dryTolerance;                                    // 初始化乾燥計時器
         }
 
         private void Start()
@@ -75,7 +77,6 @@ namespace YuCheng
                 return;
             }
             isWater = farmTile.isWatered;                               // 持續更新當前農田濕潤狀況
-
 
             #region 成長倒數
             growTimer -= Time.deltaTime;
@@ -96,11 +97,12 @@ namespace YuCheng
                     farmTile.FarmColorState();  // 變乾
                     wetTimer = wetDuration;
                 }
+                dryTimer = dryTolerance;
             }
             else
             {
-                dryTolerance -= Time.deltaTime;
-                if (dryTolerance <= 0f)
+                dryTimer -= Time.deltaTime;
+                if (dryTimer <= 0f)
                 {
                     Die(); // 作物死亡
                 }

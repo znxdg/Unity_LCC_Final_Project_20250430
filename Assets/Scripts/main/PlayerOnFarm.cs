@@ -30,6 +30,7 @@ namespace YuCheng
         {
             base.Update();
             FarmObject = PlayerCheckFarm.instance.IsFramToHit();
+            Print.Text(FarmObject);
             // 如果玩家面對農田
             if (FarmObject != null)
             {
