@@ -5018,6 +5018,7 @@ GameObject:
   - component: {fileID: 1418730731}
   - component: {fileID: 1418730730}
   - component: {fileID: 1418730732}
+  - component: {fileID: 1418730733}
   m_Layer: 0
   m_Name: "Fungus_\u6559\u5B78\u5C0D\u8A71"
   m_TagString: Untagged
@@ -5092,6 +5093,7 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1418730726}
   commandList:
+  - {fileID: 1418730733}
   - {fileID: 1418730724}
   - {fileID: 1418730731}
   - {fileID: 1418730732}
@@ -5121,8 +5123,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1418730727}
+  selectedCommands:
+  - {fileID: 1418730733}
   variables: []
   description: 
   stepPause: 0
@@ -5230,6 +5234,22 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &1418730733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418730721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d3975ab957dacd4c919d44ce4ebd65d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 6
+  indentLevel: 0
+  dialogueFlag: {fileID: 11400000, guid: bd4f10253efdff94db90bb76410af620, type: 2}
+  player: {fileID: 0}
 --- !u!1 &1508566830
 GameObject:
   m_ObjectHideFlags: 0
