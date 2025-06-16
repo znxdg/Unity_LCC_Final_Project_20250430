@@ -11,9 +11,13 @@ namespace Rrondo
     /// </summary>
     public class QTEManager : MonoBehaviour
     {
+        #region QTE 基本設置
         [Header("QTE 配置")]
-        public Transform[] pathPoints;
-        public Transform lightDot;
+        public Transform[] pathPoints;               // 星星的路徑點
+        public Transform lightDot;                   // 光點 transform
+        public QTE_UIManager uiManager;              // UI 管理員
+        public QTE_LightDot lightDotController;      // 跟光點連動
+
 
         public GameObject qteUIPrefab;
         public Transform uiParent;
@@ -32,8 +36,11 @@ namespace Rrondo
         private float inputTimeLimit = 3f;
         private bool qteActive = false;
 
+        #endregion
         public System.Action<bool> OnQTEFinished;
 
+        // 跟UI連動
+        //currentQTETexts = uiManager.CreateKeyUI(keys);
         public void StartQTE()
         {
             qteActive = false;
@@ -47,39 +54,22 @@ namespace Rrondo
 
         IEnumerator MoveAlongPathWithQTE()
         {
+            // 隨機決定哪幾個點要觸發QTE
             int qteTriggerCount = Random.Range(minQTEEvents, maxQTEEvents + 1);
             HashSet<int> qteIndices = new HashSet<int>();
             while (qteIndices.Count < qteTriggerCount)
                 qteIndices.Add(Random.Range(1, pathPoints.Length - 1));
 
-            for (int i = 0; i < pathPoints.Length - 1; i++)
-            {
-                Vector3 start = pathPoints[i].position;
-                Vector3 end = pathPoints[i + 1].position;
-                float t = 0f;
-
-                while (t < 1f)
-                {
-                    t += Time.deltaTime / (totalMoveDuration / (pathPoints.Length - 1));
-                    lightDot.position = Vector3.Lerp(start, end, t);
-                    yield return null;
-                }
-
-                if (qteIndices.Contains(i))
-                {
-                    yield return StartCoroutine(TriggerQTEEvent()); ;
-                    if (!_inputSuccess)
-                    {
-                        OnQTEFinished?.Invoke(false);
-                        lightDot.gameObject.SetActive(false);
-                        yield break;
-                    }
-                }
-            }
+            // 透過 LightDot 控制器移動
+            yield return StartCoroutine(lightDotController.MoveAlongPath((i) => qteIndices.Contains(i),(i) => TriggerQTEEvent()));
 
             lightDot.gameObject.SetActive(false);
             OnQTEFinished?.Invoke(true);
         }
+
+            
+            
+        
 
         IEnumerator TriggerQTEEvent()
         {
@@ -153,25 +143,42 @@ namespace Rrondo
                         input += c;
                         Log.Text("輸入: " + c);
                         HighlightInputProgress(input.Length - 1);
+
+                        // 若輸入長度與答案長度相等就開始判斷
+                        if (input.Length >= expectedKeys.Count)
+                        {
+                            bool isCorrect = true;
+                            for (int i = 0; i < expectedKeys.Count; i++)
+                            {
+                                if (input[i] != expectedKeys[i])
+                                {
+                                    isCorrect = false;
+                                    break;
+                                }
+                            }
+
+                            if (isCorrect)
+                            {
+                                _inputSuccess = true;
+                                yield break; // 成功，跳出協程
+                            }
+                            else
+                            {
+                                //  錯誤，重置輸入並重新產生一組鍵
+                                input = "";
+                                expectedKeys = GenerateQTEKeys();
+                                ShowQTEUI(expectedKeys);
+                                Log.Text("輸入錯誤！新組合: " + string.Join("", expectedKeys));
+                            }
+                        }
                     }
                 }
-
-                if (input.Length >= expectedKeys.Count)
-                    break;
 
                 yield return null;
             }
 
-            if (input.Length != expectedKeys.Count)
-                yield break;
-
-            for (int i = 0; i < expectedKeys.Count; i++)
-            {
-                if (input[i] != expectedKeys[i])
-                    yield break;
-            }
-
-            _inputSuccess = true;
+            // 時間到了仍未成功
+            _inputSuccess = false;
         }
 
         private void HighlightInputProgress(int index)

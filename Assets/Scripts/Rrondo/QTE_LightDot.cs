@@ -1,28 +1,53 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 namespace Rrondo
 {
     public class QTE_LightDot : MonoBehaviour
     {
-        [Header("設定光點行走的路徑點")]
-        public List<Transform> pathPoints;
 
-        [Header("移動速度")]
-        public float speed = 3f;
+        public List<Transform> pathPoints;    // 移動路徑點
+        public float segmentMoveTime = 1f;    // 每段花多少時間移動
 
-        private int currentIndex = 0;
 
-        void Update()
+        /// <summary>
+        /// 沿著路徑移動，並在每段結束時觸發回頭呼叫
+        /// </summary>
+        /// <param name="shouldTriggerQTE"></param>
+        /// <param name="onQTE"></param>
+        /// <returns></returns>
+        public IEnumerator MoveAlongPath(System.Func<int, bool> shouldTriggerQTE, System.Func<int, IEnumerator> onQTE)
         {
-            if (pathPoints == null || pathPoints.Count == 0) return;
+            if (pathPoints == null || pathPoints.Count < 2)
+                yield break;
 
-            Transform targetPoint = pathPoints[currentIndex];
-            transform.position = Vector3.MoveTowards(transform.position, targetPoint.position, speed * Time.deltaTime);
-
-            if (Vector3.Distance(transform.position, targetPoint.position) < 0.05f)
+            for (int i = 0; i < pathPoints.Count - 1; i++)
             {
-                currentIndex = (currentIndex + 1) % pathPoints.Count; // 繞圈
+                Vector3 start = pathPoints[i].position;
+                Vector3 end = pathPoints[i + 1].position;
+                float timer = 0f;
+
+                while (timer < segmentMoveTime)
+                {
+                    timer += Time.deltaTime;
+                    float t = Mathf.Clamp01(timer / segmentMoveTime);
+                    transform.position = Vector3.Lerp(start, end, t);
+                    yield return null;
+                }
+
+                if (shouldTriggerQTE != null && shouldTriggerQTE(i))
+                {
+                    yield return onQTE(i);
+                }
+            }
+        }
+
+        public void ResetPosition()
+        {
+            if (pathPoints != null && pathPoints.Count > 0)
+            {
+                transform.position = pathPoints[0].position;
             }
         }
     }
