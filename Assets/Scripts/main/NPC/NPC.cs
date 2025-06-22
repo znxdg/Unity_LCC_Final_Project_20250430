@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Fungus;
 
 namespace YuCheng
 {
@@ -12,12 +13,15 @@ namespace YuCheng
         private float uiOffset_X;
         [SerializeField]
         private float uiOffset_Y;
+        [field: SerializeField, Header("Fungus 物件")]
+        public Flowchart fungus {  get; private set; }
 
         private SpriteRenderer sr;                  // NPC本身
         public Animator ani {  get; private set; }
 
         private StateMachine stateMachine;
 
+        public bool isEnter { get; set; }           // 判斷角色是否進入互動範圍
         public NpcMissionBefore before { get; private set; }
         public NpcMissioning missioning { get; private set; }
         public NpcMissionComplete complete { get; private set; }
