@@ -6,6 +6,13 @@ namespace YuCheng
 
     public class NPC : MonoBehaviour
     {
+        [SerializeField]
+        private WorldToUI worldToUIInteraction;
+        [SerializeField]
+        private float uiOffset_X;
+        [SerializeField]
+        private float uiOffset_Y;
+
         private SpriteRenderer sr;                  // NPC本身
         public Animator ani {  get; private set; }
 
@@ -30,12 +37,13 @@ namespace YuCheng
 
         private void Start()
         {
-            StartCoroutine(FadeSystem(sr, 1f, 0, 0.9f));    // NPC淡入場景
+            StartCoroutine(NPC_FadeSystem(sr, 1f, 0, 0.9f));    // NPC淡入場景
         }
 
         private void Update()
         {
             stateMachine.Update();
+            worldToUIInteraction.UpdateUIPoint(transform, uiOffset_X, uiOffset_Y);
         }
 
         /// <summary>
@@ -46,7 +54,7 @@ namespace YuCheng
         /// <param name="startAlpha">起始的透明度，範圍0 ~ 1</param>
         /// <param name="endAlpha">結束的透明度，範圍0 ~ 1</param>
         /// <returns></returns>
-        IEnumerator FadeSystem(SpriteRenderer sr, float duration, float startAlpha, float endAlpha)
+        IEnumerator NPC_FadeSystem(SpriteRenderer sr, float duration, float startAlpha, float endAlpha)
         {
             float time = 0f;
             while (time < duration)
@@ -59,5 +67,16 @@ namespace YuCheng
             sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, endAlpha);
         }
 
+        public void InteractionButton(CanvasGroup groupInteraction, bool isEnter)
+        {
+            if (isEnter)
+            {
+                StartCoroutine(FadeSystem.Fade(groupInteraction, true));
+            }
+            else
+            {
+                StartCoroutine(FadeSystem.Fade(groupInteraction, false));
+            }
+        }
     }
 }

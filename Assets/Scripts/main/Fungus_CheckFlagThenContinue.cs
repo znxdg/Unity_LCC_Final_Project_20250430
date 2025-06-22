@@ -5,7 +5,7 @@ using UnityEngine;
 namespace YuCheng
 {
     [CommandInfo("Custom", "Check Flag Then Continue", "判斷一個腳本物件的 bool 值，為 true 則繼續執行，否則跳過 Block")]
-    public class CheckFlagThenContinue : Command
+    public class Fungus_CheckFlagThenContinue : Command
     {
         [Tooltip("要判斷的腳本物件")]
         public Fungus_Item dialogueFlag;
