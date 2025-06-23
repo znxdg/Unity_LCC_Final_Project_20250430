@@ -264,9 +264,9 @@ namespace Rrondo
 
             OnHeatingResult?.Invoke(success, isFakeRecipe);
 
-            #region 小游新增
-            return;
-            #endregion
+            
+          
+            
 
             OnHeatingFinished?.Invoke(success); // 呼叫下一個流程
         }

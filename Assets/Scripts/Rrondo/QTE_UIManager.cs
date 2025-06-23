@@ -1,66 +1,104 @@
 ﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-//using UnityEngine.UI;
 
 namespace Rrondo
 {
     /// <summary>
-    /// 我是QTE的UI管理系統
-    /// 負責操控畫面
+    /// QTE UI 管理員：控制提示文字、光點 UI 等相關顯示。
     /// </summary>
     public class QTE_UIManager : MonoBehaviour
     {
+        [Header("光點顯示")]
         public RectTransform pointerDot;
-        public GameObject qteUIPrefab;  // 一個單字母 Text 的 prefab
-        public Transform uiParent;      // 生成字母的 UI 容器
-        public TMP_Text successText;    // 成功失敗訊息
-       
+
+        [Header("字母提示 UI 設定")]
+        public GameObject qteLetterPrefab;       // 單個 QTE 字母的 預置物（需含 TextMeshProUGUI）
+        public Transform letterParent;           // 字母的 UI 生成父物件
+
+        [Header("提示文字")]
+        public TMP_Text resultText;              // 顯示 QTE 成功 / 失敗的文字
+
+        private List<TMP_Text> currentLetters = new List<TMP_Text>();
 
         /// <summary>
-        /// 生成按鍵提示
+        /// 建立一組 QTE 字母 UI（6~8 個）
         /// </summary>
-        /// <param name="keys"></param>
-        /// <returns></returns>
-        public List<TextMeshProUGUI> CreateKeyUI(List<char> keys)
+        public List<TMP_Text> CreateKeyUI(List<char> keys)
         {
-            foreach (Transform child in uiParent)Destroy(child.gameObject);
+            ClearKeyUI();
+            currentLetters.Clear();
 
-            var texts = new List<TextMeshProUGUI>();
-            foreach(var key in keys)
+            foreach (char key in keys)
             {
-                GameObject obj = Instantiate(qteUIPrefab, uiParent);
-                var text = obj.GetComponent<TextMeshProUGUI>();
-                text.text = key.ToString();
-                texts.Add(text);
+                GameObject go = Instantiate(qteLetterPrefab, letterParent);
+                TMP_Text text = go.GetComponent<TMP_Text>();
+                if (text != null)
+                {
+                    text.text = key.ToString();
+                    currentLetters.Add(text);
+                }
             }
-            return texts;
+
+            return currentLetters;
         }
 
-        public void MovePointerTo(Vector3 position)
+        /// <summary>
+        /// 更新光點位置（如果 UI 上有顯示）
+        /// </summary>
+        public void MovePointerTo(Vector3 worldPosition)
         {
-            pointerDot.anchoredPosition = position;
+            if (pointerDot != null)
+            {
+                pointerDot.position = worldPosition;
+            }
         }
 
-        public void ShowResult(bool success)
+        /// <summary>
+        /// 清除所有字母 UI
+        /// </summary>
+        public void ClearKeyUI()
         {
-            successText.gameObject.SetActive(true);
-            successText.text = success ? "成功" : "失敗";
-            successText.color = success ? Color.green : Color.red;
-        }
-        
-
-        public void HideAllHints()
-        {
-            foreach (Transform child in uiParent) Destroy(child.gameObject);
+            foreach (Transform child in letterParent)
+            {
+                Destroy(child.gameObject);
+            }
         }
 
-        public void ResetUI()
+        /// <summary>
+        /// 根據輸入進度上色字母
+        /// </summary>
+        public void HighlightProgress(int index, Color color)
         {
-            HideAllHints();
-            successText.gameObject.SetActive(false);
+            if (index >= 0 && index < currentLetters.Count)
+            {
+                currentLetters[index].color = color;
+            }
         }
-        
+
+        /// <summary>
+        /// 顯示結果字樣（成功 / 失敗）
+        /// </summary>
+        public void ShowResultText(string text, Color color)
+        {
+            if (resultText != null)
+            {
+                resultText.text = text;
+                resultText.color = color;
+                resultText.gameObject.SetActive(true);
+            }
+        }
+
+        /// <summary>
+        /// 隱藏結果文字
+        /// </summary>
+        public void HideResultText()
+        {
+            if (resultText != null)
+            {
+                resultText.gameObject.SetActive(false);
+            }
+        }
     }
 }
 
