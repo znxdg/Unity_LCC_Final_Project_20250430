@@ -6528,7 +6528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 30074108}
+  selectedFlowchart: {fileID: 612168960}
 --- !u!4 &120856720
 Transform:
   m_ObjectHideFlags: 1
@@ -43921,8 +43921,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: E
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6019d32084015d449821d19da44d4e94, type: 2}
-  m_sharedMaterial: {fileID: 3726232652830319595, guid: 6019d32084015d449821d19da44d4e94, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d3c3725fed8e872489b2dd9f258cbebb, type: 2}
+  m_sharedMaterial: {fileID: 7343595150062366351, guid: d3c3725fed8e872489b2dd9f258cbebb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

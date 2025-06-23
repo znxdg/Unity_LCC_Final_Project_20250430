@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LightDot_0: -2390439423253228057
+      LightDot_1: 8882169551867735916
+      LightDot_2: 3868650847732250479
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
