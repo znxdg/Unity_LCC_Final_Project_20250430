@@ -7,49 +7,33 @@ namespace Rrondo
 {
     public class QTE_LightDot : MonoBehaviour
     {
-        [Header("光點路徑")]
         public List<Transform> pathPoints;
+        public float moveSpeed = 3f;
 
-        [Header("光點移動時間（秒）")]
-        public float totalMoveDuration = 6f;
-
-        /// <summary>
-        /// 控制光點沿路徑移動，並在符合條件的節點觸發事件
-        /// </summary>
-        /// <param name="shouldTriggerQTE">給定節點 index 判斷是否觸發 QTE</param>
-        /// <param name="onTriggerQTE">實際觸發 QTE 的協程</param>
-        public IEnumerator MoveAlongPath(Func<int, bool> shouldTriggerQTE, Func<int, IEnumerator> onTriggerQTE)
+        public IEnumerator MoveAlongPath(Func<int, bool> shouldTriggerQTE, Func<int, IEnumerator> qteAction)
         {
             if (pathPoints == null || pathPoints.Count < 2)
-            {
-                Debug.LogError("QTE_LightDot：pathPoints 資料不足");
                 yield break;
-            }
 
             for (int i = 0; i < pathPoints.Count - 1; i++)
             {
                 Vector3 start = pathPoints[i].position;
                 Vector3 end = pathPoints[i + 1].position;
+                float distance = Vector3.Distance(start, end);
                 float t = 0f;
-                float durationPerSegment = totalMoveDuration / (pathPoints.Count - 1);
 
                 while (t < 1f)
                 {
-                    t += Time.deltaTime / durationPerSegment;
+                    t += Time.deltaTime * moveSpeed / distance;
                     transform.position = Vector3.Lerp(start, end, t);
                     yield return null;
                 }
 
-                // 到達節點後判斷是否觸發 QTE
-                if (shouldTriggerQTE != null && shouldTriggerQTE(i))
+                if (shouldTriggerQTE(i))
                 {
-                    if (onTriggerQTE != null)
-                    {
-                        yield return onTriggerQTE(i);
-                    }
+                    yield return qteAction(i);
                 }
             }
         }
     }
 }
-

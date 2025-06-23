@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
@@ -22,16 +22,16 @@ namespace Rrondo
             {
                 if (IsSameIngredients(recipe.requiredIngredients, droppedIngredients))
                 {
-                    Log.Text("���ŦX�t��I");
+                    Log.Text("找到符合配方！");
                     gameManager.StartHeatingWithRecipe(recipe);
                     return;
                 }
             }
 
-            // �S���t�令�\
-            if (droppedIngredients.Count >= 4) // �Ҧp�̦h4�ӧ���
+            // 沒有配對成功
+            if (droppedIngredients.Count >= 4) // 例如最多4個材料
             {
-                Log.Text(" �S���o�Ӱt��A���ѡI");
+                Log.Text(" 沒有這個配方，失敗！");
                 
             }
         }

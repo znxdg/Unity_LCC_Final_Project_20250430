@@ -1,56 +1,65 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
-using TMPro;
 
 namespace Rrondo
 {
     public class QTEManager : MonoBehaviour
     {
-        [Header("QTE 配置")]
-        public Transform[] pathPoints;
+        [Header("QTE 設定")]
         public Transform lightDot;
+        [Header("QTE UI 控制")]
+        public GameObject qteCanvas;  // QTE系統的Canvas
         public QTE_LightDot lightDotController;
-        public QTE_UIManager uiManager;
-
-        [Header("鍵位設定")]
-        public string allowedKeys = "QWERTYASDFGH";       // QTE的文字按鍵
-        public int minQTEEvents = 2;                      // QTE最少觸發2次
-        public int maxQTEEvents = 4;                      // QTE最多觸發4次
-        public int minKeysPerEvent = 6;                   // QTE最少刷出6個字母
-        public int maxKeysPerEvent = 8;                   // QTE最多刷出8個字母
-        public float totalMoveDuration = 6f;
-        public int playerLevel = 1;                
-
-        public GameObject qteUIPrefab;
         public Transform uiParent;
+        public GameObject qteUIPrefab;
 
-        private List<TextMeshProUGUI> currentQTETexts = new();
-        private float inputTimeLimit = 3f;
-        private bool _inputSuccess = false;
+        private bool qteActive = false;
+        private string playerInput = "";
+
+        public string allowedKeys = "QWERTYASDFGH";
+        public int minQTEEvents = 2;              // QTE最少出現2次 最多出現4次
+        public int maxQTEEvents = 4;
+        public int minKeysPerEvent = 6;           // QTE最少出現6個字母 最多出現8個
+        public int maxKeysPerEvent = 8;
+        public int playerLevel = 0;
+
+        private List<Text> currentQTETexts = new List<Text>();
+        private float inputTimeLimit;
+        private bool _inputSuccess;
+        private bool _qteRunning;
+
 
         public System.Action<bool> OnQTEFinished;
 
         public void StartQTE()
         {
+            // 把QTE的畫布給打開
+            if (qteCanvas != null)
+                    qteCanvas.SetActive(true);
+            qteActive = false;
             lightDot.gameObject.SetActive(true);
             inputTimeLimit = Mathf.Clamp(3f + playerLevel, 3f, 6f);
+            playerInput = "";
+            currentQTETexts.Clear();
+
             StartCoroutine(MoveAlongPathWithQTE());
         }
 
         IEnumerator MoveAlongPathWithQTE()
         {
             int qteTriggerCount = Random.Range(minQTEEvents, maxQTEEvents + 1);
-            HashSet<int> qteIndices = new();
+            HashSet<int> qteIndices = new HashSet<int>();
             while (qteIndices.Count < qteTriggerCount)
-                qteIndices.Add(Random.Range(1, pathPoints.Length - 1));
+                qteIndices.Add(Random.Range(1, lightDotController.pathPoints.Count - 1));
 
             bool allQTESuccess = true;
 
             yield return StartCoroutine(lightDotController.MoveAlongPath(
-                (i) => qteIndices.Contains(i),
-                (i) => TriggerQTEEvent((success) => {
+                (index) => qteIndices.Contains(index),
+                (index) => TriggerQTEEventCoroutine((success) => {
                     if (!success) allQTESuccess = false;
                 })
             ));
@@ -59,17 +68,23 @@ namespace Rrondo
             OnQTEFinished?.Invoke(allQTESuccess);
         }
 
-        IEnumerator TriggerQTEEvent(System.Action<bool> callback)
+        IEnumerator TriggerQTEEventCoroutine(System.Action<bool> onFinish)
+        {
+            _qteRunning = true;
+            bool result = false;
+            yield return StartCoroutine(TriggerQTEEvent((success) => result = success));
+            _qteRunning = false;
+            onFinish?.Invoke(result);
+        }
+
+        IEnumerator TriggerQTEEvent(System.Action<bool> onFinish)
         {
             _inputSuccess = false;
-            int retryLimit = 3;
-            int retryCount = 0;
+            float timer = 0f;
+            string input = "";
 
             List<char> expectedKeys = GenerateQTEKeys();
             ShowQTEUI(expectedKeys);
-
-            float timer = 0f;
-            string input = "";
 
             while (timer < inputTimeLimit)
             {
@@ -80,61 +95,52 @@ namespace Rrondo
                     if (Input.GetKeyDown(c.ToString().ToLower()))
                     {
                         input += c;
-                        Log.Text("輸入: " + c);
                         HighlightInputProgress(input.Length - 1);
 
                         if (input.Length >= expectedKeys.Count)
                         {
-                            if (IsInputCorrect(input, expectedKeys))
+                            if (CheckInput(input, expectedKeys))
                             {
                                 _inputSuccess = true;
-                                callback(true);
-                                yield break;
+                                break;
                             }
                             else
                             {
-                                retryCount++;
-                                if (retryCount >= retryLimit)
-                                {
-                                    Log.Text("重試次數過多，判定失敗");
-                                    callback(false);
-                                    yield break;
-                                }
-
                                 input = "";
                                 expectedKeys = GenerateQTEKeys();
                                 ShowQTEUI(expectedKeys);
-                                Log.Text("輸入錯誤！新組合: " + string.Join("", expectedKeys));
                             }
                         }
                     }
                 }
 
+                if (_inputSuccess) break;
                 yield return null;
             }
 
-            callback(false); // 超時
+            onFinish?.Invoke(_inputSuccess);
         }
 
         List<char> GenerateQTEKeys()
         {
             int count = Random.Range(minKeysPerEvent, maxKeysPerEvent + 1);
-            List<char> result = new();
+            List<char> keys = new List<char>();
             for (int i = 0; i < count; i++)
-                result.Add(allowedKeys[Random.Range(0, allowedKeys.Length)]);
-            return result;
+                keys.Add(allowedKeys[Random.Range(0, allowedKeys.Length)]);
+            return keys;
         }
 
         void ShowQTEUI(List<char> keys)
         {
             foreach (Transform child in uiParent)
                 Destroy(child.gameObject);
+
             currentQTETexts.Clear();
 
             foreach (char k in keys)
             {
                 GameObject go = Instantiate(qteUIPrefab, uiParent);
-                TextMeshProUGUI txt = go.GetComponent<TextMeshProUGUI>();
+                Text txt = go.GetComponent<Text>();
                 txt.text = k.ToString();
                 currentQTETexts.Add(txt);
             }
@@ -146,14 +152,20 @@ namespace Rrondo
                 currentQTETexts[index].color = Color.green;
         }
 
-        bool IsInputCorrect(string input, List<char> expected)
+        bool CheckInput(string input, List<char> expected)
         {
             if (input.Length != expected.Count) return false;
             for (int i = 0; i < expected.Count; i++)
                 if (input[i] != expected[i]) return false;
             return true;
         }
+
+        // 結束關掉UI，確保畫面乾淨
+        public void EndQTE()
+        {
+            if (qteCanvas != null)
+                qteCanvas.SetActive(false);
+        }
     }
 }
-
 
