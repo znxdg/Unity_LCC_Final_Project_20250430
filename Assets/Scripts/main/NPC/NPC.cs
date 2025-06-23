@@ -16,6 +16,9 @@ namespace YuCheng
         [field: SerializeField, Header("Fungus 物件")]
         public Flowchart fungus {  get; private set; }
 
+        public int decoctionCount {  get; private set; }
+        public int needDecoctionCount { get; private set; } = 1;
+
         private SpriteRenderer sr;                  // NPC本身
         public Animator ani {  get; private set; }
 
@@ -48,6 +51,9 @@ namespace YuCheng
         {
             stateMachine.Update();
             worldToUIInteraction.UpdateUIPoint(transform, uiOffset_X, uiOffset_Y);
+#if UNITY_EDITOR
+            TestMissionComplete();
+#endif
         }
 
         /// <summary>
@@ -82,5 +88,12 @@ namespace YuCheng
                 StartCoroutine(FadeSystem.Fade(groupInteraction, false));
             }
         }
+
+#if UNITY_EDITOR
+        private void TestMissionComplete()
+        {
+            if (Input.GetKeyDown(KeyCode.Keypad0)) decoctionCount = needDecoctionCount;
+        }
+#endif
     }
 }
