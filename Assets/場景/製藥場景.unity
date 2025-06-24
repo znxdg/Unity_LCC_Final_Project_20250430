@@ -716,7 +716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27082e816ccbb264aa76a3c0241cb43c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightDot: {fileID: 1950688580}
+  lightDot: {fileID: 704565732}
   qteCanvas: {fileID: 1687923637}
   lightDotController: {fileID: 1950688579}
   uiParent: {fileID: 698407434}
@@ -741,7 +741,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1950688580}
-  - {fileID: 1687923641}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &135629030
@@ -1245,6 +1244,38 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 711363397}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &418990070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 418990071}
+  m_Layer: 0
+  m_Name: "Qte\u6587\u5B57"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &418990071
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418990070}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.5775945, y: 0.2976767, z: -0.041156296}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1687923641}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &446571499
 GameObject:
@@ -6623,7 +6654,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687923637}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
@@ -6634,7 +6665,7 @@ RectTransform:
   - {fileID: 704565732}
   - {fileID: 1798009186}
   - {fileID: 2806829708648065321}
-  m_Father: {fileID: 119131135}
+  m_Father: {fileID: 418990071}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7195,8 +7226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc6c3a30b73c7e748ab2a9e78f6632eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyPrefab: {fileID: 0}
-  keyParent: {fileID: 0}
+  keyPrefab: {fileID: 8593818410175167745, guid: aa0c14fb5098e3d40bd2c854f578e30b, type: 3}
+  keyParent: {fileID: 698407434}
   pointerDot: {fileID: 704565732}
   resultText: {fileID: 1798009187}
 --- !u!1 &1826678394
@@ -7631,7 +7662,8 @@ MonoBehaviour:
   - {fileID: 111180969}
   - {fileID: 804225140}
   - {fileID: 757548567}
-  moveSpeed: 3
+  speed: 300
+  rectTransform: {fileID: 704565732}
 --- !u!4 &1950688580
 Transform:
   m_ObjectHideFlags: 0
@@ -8414,6 +8446,7 @@ SceneRoots:
   - {fileID: 119131135}
   - {fileID: 672678633}
   - {fileID: 941800758}
+  - {fileID: 418990071}
   - {fileID: 1335315676}
   - {fileID: 1418730729}
   - {fileID: 1340971631}

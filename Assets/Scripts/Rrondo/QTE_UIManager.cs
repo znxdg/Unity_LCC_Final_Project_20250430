@@ -17,7 +17,7 @@ namespace Rrondo
         [Header(" 光點")]
         public RectTransform pointerDot;         // 指向的光點 UI
 
-        [Header(" 成功 / ❌ 失敗提示")]
+        [Header(" 成功 /  失敗提示")]
         public TMP_Text resultText;
 
         /// <summary>

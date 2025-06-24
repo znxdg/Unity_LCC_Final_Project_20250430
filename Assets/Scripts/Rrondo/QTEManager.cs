@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -140,9 +141,17 @@ namespace Rrondo
             foreach (char k in keys)
             {
                 GameObject go = Instantiate(qteUIPrefab, uiParent);
-                Text txt = go.GetComponent<Text>();
+    
+                TextMeshProUGUI txt = go.GetComponent<TextMeshProUGUI>();
+                
+                if(txt == null)
+                {
+                    Debug.LogError("qteUIPrefab 上沒有 TextMeshProUGUI 組件");
+                    continue;
+                }
+
                 txt.text = k.ToString();
-                currentQTETexts.Add(txt);
+                //currentQTETexts.Add(txt); 等一下再添加
             }
         }
 
