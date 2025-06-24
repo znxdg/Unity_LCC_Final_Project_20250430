@@ -122,6 +122,7 @@ namespace Rrondo
 
         void Update()
         {
+            if (Input.GetKeyDown(KeyCode.Keypad0)) Finish(true); 
             #region 小游新增
             if (!startHeat) return;
             #endregion
@@ -154,13 +155,13 @@ namespace Rrondo
             {
                 overheatTimer += Time.deltaTime;
                 underheatTimer = 0;
-                stableTimer = 0;
+                //stableTimer = 0;
             }
             else
             {
                 underheatTimer += Time.deltaTime;
                 overheatTimer = 0;
-                stableTimer = 0;
+                //stableTimer = 0;
             }
 
             if (overheatTimer > overheatFailTime || underheatTimer > underheatFailTime)

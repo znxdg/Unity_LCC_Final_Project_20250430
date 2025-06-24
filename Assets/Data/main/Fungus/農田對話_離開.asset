@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: "\u8FB2\u7530\u5C0D\u8A71_\u96E2\u958B"
   m_EditorClassIdentifier: 
   fungus_name: "\u8FB2\u7530\u5C0D\u8A71\u6846_\u96E2\u958B"
-  fungusShowState: 1
+  fungusShowState: 0

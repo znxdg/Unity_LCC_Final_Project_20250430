@@ -15,7 +15,7 @@ namespace YuCheng
         {
             base.Update();
 
-            if (npc.decoctionCount >= npc.needDecoctionCount) stateMachine.SwitchState(npc.complete);
+            if (npc.item.count >= npc.needDecoctionCount) stateMachine.SwitchState(npc.complete);
         }
 
         protected override void Interaction()

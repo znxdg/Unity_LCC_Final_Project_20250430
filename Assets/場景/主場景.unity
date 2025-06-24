@@ -1385,7 +1385,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 30074087}
+  - {fileID: 30074084}
   selectedCommands: []
   variables: []
   description: 
@@ -6757,7 +6757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1914208064}
+  selectedFlowchart: {fileID: 30074108}
 --- !u!4 &120856720
 Transform:
   m_ObjectHideFlags: 1
@@ -21910,6 +21910,53 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &571653203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 571653205}
+  - component: {fileID: 571653204}
+  m_Layer: 0
+  m_Name: "\u904A\u6232\u7BA1\u7406\u5668"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &571653204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571653203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cbfecba3fcbf24479ff31120345ed7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 1146289853}
+  scopeObject: {fileID: 1914208060}
+  triggerMedicine: {fileID: 11400000, guid: bd4f10253efdff94db90bb76410af620, type: 2}
+--- !u!4 &571653205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571653203}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.064606, y: -2.5713396, z: 5.5801916}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39936,6 +39983,8 @@ MonoBehaviour:
   uiOffset_X: 0.06
   uiOffset_Y: 1.06
   <fungus>k__BackingField: {fileID: 30074108}
+  item: {fileID: 11400000, guid: abdbfcfb12403094c937124f70436f91, type: 2}
+  triggerMedicine: {fileID: 11400000, guid: bd4f10253efdff94db90bb76410af620, type: 2}
 --- !u!212 &1146289855
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40390,7 +40439,7 @@ Transform:
   m_GameObject: {fileID: 1195270060}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8333416, y: -1.4699999, z: -10}
+  m_LocalPosition: {x: -2.95, y: -1.47, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42665,9 +42714,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 1567614230}
+  - {fileID: 1567614223}
   selectedCommands:
-  - {fileID: 1567614229}
+  - {fileID: 1567614247}
   variables: []
   description: 
   stepPause: 0
@@ -51057,3 +51106,4 @@ SceneRoots:
   - {fileID: 1711087090}
   - {fileID: 1146289856}
   - {fileID: 2104401749}
+  - {fileID: 571653205}

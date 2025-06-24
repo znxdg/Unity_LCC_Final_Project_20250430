@@ -12,6 +12,7 @@ namespace Rrondo
         public HeatManager heatManager;
         public QTEManager qteManager;
         public RecipeConfig selectedRecipe;
+        public IngredientConfig item;
 
         void Start()
         {
@@ -54,6 +55,8 @@ namespace Rrondo
             {
                 Log.Text("QTE成功，繼續後續流程");
                 // 往下流程邏輯
+                qteManager.EndQTE();
+                item.count++;
             }
             else
             {

@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 namespace Rrondo
 {
     [CreateAssetMenu(menuName = "Rrondo/Ingredient")]
@@ -9,6 +9,7 @@ namespace Rrondo
         [TextArea(2,5)]
         public string description;
         public Sprite icon;
+        public int count;
     }
 
 }

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Fungus;
+using Rrondo;
 
 namespace YuCheng
 {
@@ -15,6 +16,11 @@ namespace YuCheng
         private float uiOffset_Y;
         [field: SerializeField, Header("Fungus 物件")]
         public Flowchart fungus {  get; private set; }
+        [SerializeField]
+        public IngredientConfig item;
+
+        [SerializeField]
+        Fungus_Item triggerMedicine;
 
         public int decoctionCount {  get; private set; }
         public int needDecoctionCount { get; private set; } = 1;
@@ -38,8 +44,14 @@ namespace YuCheng
             before = new NpcMissionBefore(this, stateMachine, $"{name} 接任務前");
             missioning = new NpcMissioning(this, stateMachine, $"{name} 任務進行中");
             complete = new NpcMissionComplete(this, stateMachine, $"{name} 任務完成");
-
-            stateMachine.Initialize(before);
+            if (!triggerMedicine.fungusShowState)
+            {
+                stateMachine.Initialize(before);
+            }
+            else
+            {
+                stateMachine.Initialize(missioning);
+            }
         }
 
         private void Start()
