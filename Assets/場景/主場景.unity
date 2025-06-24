@@ -512,6 +512,13 @@ GameObject:
   - component: {fileID: 30074112}
   - component: {fileID: 30074111}
   - component: {fileID: 30074110}
+  - component: {fileID: 30074115}
+  - component: {fileID: 30074121}
+  - component: {fileID: 30074120}
+  - component: {fileID: 30074119}
+  - component: {fileID: 30074118}
+  - component: {fileID: 30074117}
+  - component: {fileID: 30074116}
   m_Layer: 0
   m_Name: "Fungus_NPC_\u9748\u9748"
   m_TagString: Untagged
@@ -668,7 +675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 24
   indentLevel: 0
-  storyText: "(\u63A5\u904E\u6E6F\u85E5\uFF0C\u4E26\u98F2\u5165\u53E3\u4E2D)"
+  storyText: "(\u63A5\u904E\u6E6F\u85E5\uFF0C\u4E26\u98F2\u4E0B)"
   description: 
   character: {fileID: 1900947728}
   portrait: {fileID: 0}
@@ -722,11 +729,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 477.69965
-    y: 162.0554
+    x: 528.69965
+    y: 246.0554
     width: 98.009995
     height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
+  tint: {r: 0.7372549, g: 0.7372549, b: 0.7372549, a: 1}
   useCustomTint: 1
   itemId: 22
   blockName: "\u4EFB\u52D9\u5B8C\u6210"
@@ -809,12 +816,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 315
-    y: 243
+    x: 271
+    y: 245
     width: 98.009995
     height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
+  tint: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
+  useCustomTint: 1
   itemId: 19
   blockName: "\u9078\u64C7\u6E6F\u85E5"
   description: 
@@ -823,6 +830,7 @@ MonoBehaviour:
   - {fileID: 30074086}
   - {fileID: 30074085}
   - {fileID: 30074110}
+  - {fileID: 30074115}
   suppressAllAutoSelections: 0
 --- !u!114 &30074088
 MonoBehaviour:
@@ -944,12 +952,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 197
-    y: 239
+    x: 390
+    y: 246
     width: 98.009995
     height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
+  tint: {r: 0.7372549, g: 0.7372549, b: 0.7372549, a: 1}
+  useCustomTint: 1
   itemId: 14
   blockName: "\u9078\u64C7\u85E5\u8349"
   description: 
@@ -999,7 +1007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parentBlock: {fileID: 30074096}
   suppressBlockAutoSelect: 0
-  message: "\u4EFB\u52D9\u9032\u884C\u4E2D"
+  message: "\u4EFB\u52D9\u9032\u884C\u4E2D(\u672A\u5B8C\u6210)"
 --- !u!114 &30074095
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1041,14 +1049,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 316
+    x: 317
     y: 163
-    width: 110.009995
+    width: 154.7
     height: 40
   tint: {r: 0.8679245, g: 0.8638305, b: 0.8638305, a: 1}
   useCustomTint: 1
   itemId: 30
-  blockName: "\u4EFB\u52D9\u9032\u884C\u4E2D"
+  blockName: "\u4EFB\u52D9\u9032\u884C\u4E2D(\u672A\u5B8C\u6210)"
   description: 
   eventHandler: {fileID: 30074094}
   commandList:
@@ -1377,9 +1385,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 30074096}
-  selectedCommands:
-  - {fileID: 30074088}
+  - {fileID: 30074087}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -1408,7 +1415,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &30074110
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1464,7 +1471,7 @@ MonoBehaviour:
       m_Calls: []
 --- !u!114 &30074111
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1520,7 +1527,7 @@ MonoBehaviour:
       m_Calls: []
 --- !u!114 &30074112
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1686,6 +1693,228 @@ MonoBehaviour:
   stringEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &30074115
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30074076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d9ff288f3904c05ada7ac9c9a075bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 36
+  indentLevel: 0
+  description: 
+  delay: 0
+  invokeType: 0
+  staticEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  booleanParameter:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  booleanEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  integerParameter:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  integerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  floatParameter:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  floatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  stringParameter:
+    stringRef: {fileID: 0}
+    stringVal: 
+  stringEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &30074116
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30074076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d7d417659cd54a6787f70f763950c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 30074121}
+  suppressBlockAutoSelect: 0
+  message: "\u4EFB\u52D9\u5B8C\u6210"
+--- !u!114 &30074117
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30074076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 41
+  indentLevel: 0
+  text: "\u7D66\u4E88\u6E6F\u85E5"
+  description: 
+  targetBlock: {fileID: 30074084}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &30074118
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30074076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 40
+  indentLevel: 0
+  text: "\u7D66\u4E88\u85E5\u8349"
+  description: 
+  targetBlock: {fileID: 30074092}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+  hideThisOption:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+--- !u!114 &30074119
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30074076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 39
+  indentLevel: 0
+  storyText: "\u6211\u597D\u75DB....\u59B3\u6709\u85E5\u55CE?"
+  description: 
+  character: {fileID: 1900947728}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &30074120
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30074076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d9ff288f3904c05ada7ac9c9a075bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 38
+  indentLevel: 0
+  description: 
+  delay: 0
+  invokeType: 0
+  staticEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 501091448}
+        m_TargetAssemblyTypeName: YuCheng.Player, Assembly-CSharp
+        m_MethodName: set_canMove
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  booleanParameter:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  booleanEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  integerParameter:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  integerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  floatParameter:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  floatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  stringParameter:
+    stringRef: {fileID: 0}
+    stringVal: 
+  stringEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &30074121
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30074076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 496
+    y: 167
+    width: 130.7
+    height: 40
+  tint: {r: 0.8679245, g: 0.8638305, b: 0.8638305, a: 1}
+  useCustomTint: 1
+  itemId: 42
+  blockName: "\u4EFB\u52D9\u5B8C\u6210(\u9078\u9805)"
+  description: 
+  eventHandler: {fileID: 30074116}
+  commandList:
+  - {fileID: 30074120}
+  - {fileID: 30074119}
+  - {fileID: 30074118}
+  - {fileID: 30074117}
+  suppressAllAutoSelections: 0
 --- !u!1001 &34409891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6528,7 +6757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 612168960}
+  selectedFlowchart: {fileID: 1914208064}
 --- !u!4 &120856720
 Transform:
   m_ObjectHideFlags: 1
@@ -39685,7 +39914,7 @@ GameObject:
   - component: {fileID: 1146289854}
   - component: {fileID: 1146289857}
   m_Layer: 0
-  m_Name: "NPC_\u9748\u9748_\u5F85\u6A5F"
+  m_Name: "NPC_\u9748\u9748"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45225,6 +45454,7 @@ GameObject:
   - component: {fileID: 1914208072}
   - component: {fileID: 1914208075}
   - component: {fileID: 1914208074}
+  - component: {fileID: 1914208076}
   m_Layer: 0
   m_Name: "Fungus_\u5224\u65B7\u662F\u5426\u9032\u5165NPC\u5C0D\u8A71\u7BC4\u570D"
   m_TagString: Untagged
@@ -45295,6 +45525,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 1914208068}
   - {fileID: 1914208067}
+  - {fileID: 1914208076}
   - {fileID: 1914208062}
   - {fileID: 1914208073}
   - {fileID: 1914208075}
@@ -45315,7 +45546,7 @@ MonoBehaviour:
   scrollPos: {x: 85.54816, y: 368.92184}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 487
+  blockViewHeight: 358
   zoom: 0.94000006
   scrollViewRect:
     serializedVersion: 2
@@ -45324,9 +45555,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 1914208071}
+  - {fileID: 1914208063}
   selectedCommands:
-  - {fileID: 1914208074}
+  - {fileID: 1914208076}
   variables: []
   description: 
   stepPause: 0
@@ -45748,6 +45979,24 @@ MonoBehaviour:
   stringEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1914208076
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914208060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 10
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1.6
+  durationOLD: 0
 --- !u!1001 &1914830909
 PrefabInstance:
   m_ObjectHideFlags: 0
