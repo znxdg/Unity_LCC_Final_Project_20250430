@@ -27,6 +27,11 @@ namespace YuCheng
         [SerializeField]
         public bool canWater = true;    // 判斷是否需要取水
 
+        //[field: Header("音效"), SerializeField]
+        //public AudioClip soundWalk {  get; private set; }
+        //[field: SerializeField]
+        //public AudioClip soundPull { get; private set; }
+
         public Animator ani { get; private set; }           // 動畫控制元件
         public Rigidbody2D rig { get; private set; }        // 2D 剛體元件
 
@@ -89,5 +94,25 @@ namespace YuCheng
             float angle = h > 0 ? 0 : 180;
             transform.eulerAngles = new Vector3(0, angle, 0);
         }
+
+        /// <summary>
+        /// 播放音效：提供給動畫呼叫使用
+        /// Animation 呼叫的方法參數僅限 0 ~ 1 個
+        /// </summary>
+        /// <param name="sound">音效</param>
+        private void PlaySound(AudioClip sound)
+        {
+            SoundManager.instance.PlaySound(sound, 0.6f, 1.2f);
+        }
+
+        /// <summary>
+        /// 播放小音效：提供給動畫呼叫使用
+        /// </summary>
+        /// <param name="sound">音效</param>
+        private void PlaySoundLowVolume(AudioClip sound)
+        {
+            SoundManager.instance.PlaySound(sound, 0.2f, 0.4f);
+        }
+
     }
 }

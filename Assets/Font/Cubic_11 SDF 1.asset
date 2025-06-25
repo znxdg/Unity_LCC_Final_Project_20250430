@@ -8739,6 +8739,5 @@ Material:
     - _OutlineSoftness: 0.045
     - _ScaleRatioA: 0.9
     m_Colors:
-    - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
