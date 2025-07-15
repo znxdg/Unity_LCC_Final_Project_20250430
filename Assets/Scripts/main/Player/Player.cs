@@ -1,5 +1,6 @@
 ﻿using Rrondo;
 using UnityEngine;
+using UnityEngine.VFX;
 
 namespace YuCheng
 {
@@ -11,11 +12,13 @@ namespace YuCheng
         #region 基本參數&設置
         [Header("基本數值")]
         [SerializeField]
-        public bool canMove { get; set; }
+        public bool canMove { get; set; } = true;
         [SerializeField, Range(0, 10)]
         public float moveSpeed = 3.5f;
         [SerializeField, Range(0, 20)]
         public float runSpeed = 7f;
+
+        public VisualEffect vfxRenderer;
 
         [Header("攜帶物模擬")]
         [SerializeField]
@@ -83,6 +86,8 @@ namespace YuCheng
             if (ver_value > 0) way_value = 2;
             if (hor_value != 0) way_value = 1;
             if (ver_value < 0) way_value = 0;
+
+            vfxRenderer.SetVector3("ColliderPos", transform.position);
         }
         /// <summary>
         /// 翻面

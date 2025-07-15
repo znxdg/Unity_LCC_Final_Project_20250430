@@ -7463,7 +7463,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &262710959
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -16079,7 +16079,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &359257794
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -21834,6 +21834,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3.5
   runSpeed: 5
+  vfxRenderer: {fileID: 878790858}
   takeSomething: 0
   takeSeed: 1
   canHarvest: 0
@@ -29332,13 +29333,28 @@ VisualEffect:
   m_ResourceVersion: 1
   m_PropertySheet:
     m_Float:
-      m_Array: []
+      m_Array:
+      - m_Value: 500
+        m_Name: FogAmount
+        m_Overridden: 1
+      - m_Value: 15
+        m_Name: FogSizeMax
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: -0.5, y: -0.3, z: 0}
+        m_Name: WindSpeedMin
+        m_Overridden: 1
+      - m_Value: {x: 1, y: 0.7, z: 0}
+        m_Name: WindSpeedMax
+        m_Overridden: 1
     m_Vector4f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 0.7309541, y: 0.8113208, z: 0.795491, w: 0}
+        m_Name: FogSeconderyColor
+        m_Overridden: 1
     m_Uint:
       m_Array: []
     m_Int:
